@@ -1,0 +1,1 @@
+revise: The suite never checks that two SeasonSwitch objects are independent. Add one test: create switch a and switch b; a.cool(); then b.off(). b was never turned on, so b.off() must print nothing, and a must keep cooling (a.ac.isOn true, a.timer running). Check only behaviour (output, AC, timer), not the state variable.

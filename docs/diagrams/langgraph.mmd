@@ -1,0 +1,68 @@
+---
+config:
+  layout: elk
+---
+flowchart TB
+    START(( )):::start
+    subgraph design["Steps 1-4: design the test cases"]
+        direction TB
+        setup["<b>setup</b><br/>compile, observe, analyze"]:::tool
+        ep_agent["<b>ep_agent</b><br/>step 1: EP test cases"]:::agent
+        bva_agent["<b>bva_agent</b><br/>step 1: BVA test cases"]:::agent
+        curate["<b>curate</b><br/>steps 2-3: join, remove duplicates"]:::tool
+        review_tests["<b>review_tests</b><br/>step 4: the tester reviews"]:::person
+        revise_tests["<b>revise_tests</b><br/>step 4: the reviser applies changes"]:::agent
+    end
+    subgraph test["Steps 5-7 and 10-12: test, repair, cover (original, then refactored code)"]
+        direction TB
+        run_tests["<b>run_tests</b><br/>steps 5, 10: mvn test"]:::tool
+        repair["<b>repair</b><br/>step 6: fix the code or the test, log it"]:::agent
+        measure_coverage["<b>measure_coverage</b><br/>steps 7, 11: JaCoCo branch coverage"]:::tool
+        coverage_gap["<b>coverage_gap</b><br/>steps 7, 12: tests for missed branches"]:::agent
+        ask_human["<b>ask_human</b><br/>a loop reached its limit"]:::person
+    end
+    subgraph refactoring["Steps 8-10: refactor and reuse the tests"]
+        direction TB
+        refactor["<b>refactor</b><br/>step 8: State pattern, final prompt P3"]:::agent
+        review_refactoring["<b>review_refactoring</b><br/>step 9: the team reviews"]:::person
+        recheck_refactoring["<b>recheck_refactoring</b><br/>step 9: compile, javap checks"]:::tool
+        adapt_tests["<b>adapt_tests</b><br/>step 10: reuse, adapt or remove tests"]:::agent
+    end
+    finalize["<b>finalize</b><br/>save results, summary.md, final/"]:::tool
+    END((( ))):::stop
+    START --> setup
+    adapt_tests --> run_tests
+    ask_human -. "stop" .-> finalize
+    ask_human -. "continue" .-> run_tests
+    bva_agent --> curate
+    coverage_gap --> run_tests
+    curate --> review_tests
+    ep_agent --> curate
+    measure_coverage -. "coverage limit" .-> ask_human
+    measure_coverage -. "branch coverage < 100%" .-> coverage_gap
+    measure_coverage -. "100%, refactored code" .-> finalize
+    measure_coverage -. "100%, original code" .-> refactor
+    recheck_refactoring --> review_refactoring
+    refactor -. "compile errors: retry" .-> refactor
+    refactor -. "compiles" .-> review_refactoring
+    repair --> run_tests
+    review_refactoring -. "accepted" .-> adapt_tests
+    review_refactoring -. "code edited" .-> recheck_refactoring
+    review_refactoring -. "feedback or edited prompt" .-> refactor
+    review_tests -. "changes requested" .-> revise_tests
+    review_tests -. "accepted" .-> run_tests
+    revise_tests --> review_tests
+    run_tests -. "repair limit or build error" .-> ask_human
+    run_tests -. "all pass" .-> measure_coverage
+    run_tests -. "failures" .-> repair
+    setup --> bva_agent
+    setup --> ep_agent
+    finalize --> END
+    classDef agent fill:#EDE9FE,stroke:#7C3AED,stroke-width:1.5px,color:#0F172A
+    classDef tool fill:#E2E8F0,stroke:#475569,stroke-width:1.5px,color:#0F172A
+    classDef person fill:#FEF3C7,stroke:#D97706,stroke-width:1.5px,color:#0F172A
+    classDef start fill:#0F172A,stroke:#0F172A
+    classDef stop fill:#0F172A,stroke:#0F172A
+    style design fill:#F8FAFC,stroke:#CBD5E1,stroke-width:1.4px,color:#0F172A
+    style test fill:#F8FAFC,stroke:#CBD5E1,stroke-width:1.4px,color:#0F172A
+    style refactoring fill:#F8FAFC,stroke:#CBD5E1,stroke-width:1.4px,color:#0F172A

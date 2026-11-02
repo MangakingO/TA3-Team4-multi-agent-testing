@@ -1,0 +1,713 @@
+{
+  "branch": {
+    "covered": 16,
+    "total": 16,
+    "pct": 100.0
+  },
+  "line": {
+    "covered": 112,
+    "total": 116,
+    "pct": 96.55
+  },
+  "instruction": {
+    "covered": 405,
+    "total": 416,
+    "pct": 97.36
+  },
+  "method": {
+    "covered": 36,
+    "total": 36,
+    "pct": 100.0
+  },
+  "class": {
+    "covered": 8,
+    "total": 8,
+    "pct": 100.0
+  },
+  "branch_vacuous": false,
+  "classes": [
+    {
+      "name": "cse4392.CoolState",
+      "branch": {
+        "covered": 4,
+        "total": 4,
+        "pct": 100.0
+      },
+      "line": {
+        "covered": 23,
+        "total": 23,
+        "pct": 100.0
+      },
+      "method": {
+        "covered": 6,
+        "total": 6,
+        "pct": 100.0
+      },
+      "methods": [
+        {
+          "name": "<init>",
+          "line": 3,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 3,
+            "total": 3,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "cool",
+          "line": 7,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 1,
+            "total": 1,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "heat",
+          "line": 11,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 19,
+            "total": 19,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "off",
+          "line": 20,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 16,
+            "total": 16,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "timerOff",
+          "line": 28,
+          "branch": {
+            "covered": 2,
+            "total": 2,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 26,
+            "total": 26,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "roomTick",
+          "line": 39,
+          "branch": {
+            "covered": 2,
+            "total": 2,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 20,
+            "total": 20,
+            "pct": 100.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "cse4392.SeasonSwitch$AC",
+      "branch": {
+        "covered": 0,
+        "total": 0,
+        "pct": 100.0
+      },
+      "line": {
+        "covered": 4,
+        "total": 4,
+        "pct": 100.0
+      },
+      "method": {
+        "covered": 3,
+        "total": 3,
+        "pct": 100.0
+      },
+      "methods": [
+        {
+          "name": "<init>",
+          "line": 61,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 9,
+            "total": 9,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "on",
+          "line": 63,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 4,
+            "total": 4,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "off",
+          "line": 64,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 4,
+            "total": 4,
+            "pct": 100.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "cse4392.SeasonSwitch",
+      "branch": {
+        "covered": 8,
+        "total": 8,
+        "pct": 100.0
+      },
+      "line": {
+        "covered": 35,
+        "total": 39,
+        "pct": 89.74
+      },
+      "method": {
+        "covered": 8,
+        "total": 8,
+        "pct": 100.0
+      },
+      "methods": [
+        {
+          "name": "<init>",
+          "line": 9,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 37,
+            "total": 37,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "setState",
+          "line": 19,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 4,
+            "total": 4,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "cool",
+          "line": 23,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 5,
+            "total": 5,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "heat",
+          "line": 26,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 5,
+            "total": 5,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "off",
+          "line": 29,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 5,
+            "total": 5,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "actionPerformed",
+          "line": 32,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 3,
+            "total": 3,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "timerOff",
+          "line": 35,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 5,
+            "total": 5,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "main",
+          "line": 38,
+          "branch": {
+            "covered": 8,
+            "total": 8,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 60,
+            "total": 71,
+            "pct": 84.51
+          }
+        }
+      ]
+    },
+    {
+      "name": "cse4392.SeasonState",
+      "branch": {
+        "covered": 0,
+        "total": 0,
+        "pct": 100.0
+      },
+      "line": {
+        "covered": 4,
+        "total": 4,
+        "pct": 100.0
+      },
+      "method": {
+        "covered": 2,
+        "total": 2,
+        "pct": 100.0
+      },
+      "methods": [
+        {
+          "name": "<init>",
+          "line": 3,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 3,
+            "total": 3,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "<clinit>",
+          "line": 4,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 13,
+            "total": 13,
+            "pct": 100.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "cse4392.OffState",
+      "branch": {
+        "covered": 0,
+        "total": 0,
+        "pct": 100.0
+      },
+      "line": {
+        "covered": 14,
+        "total": 14,
+        "pct": 100.0
+      },
+      "method": {
+        "covered": 6,
+        "total": 6,
+        "pct": 100.0
+      },
+      "methods": [
+        {
+          "name": "<init>",
+          "line": 3,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 3,
+            "total": 3,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "cool",
+          "line": 6,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 16,
+            "total": 16,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "heat",
+          "line": 14,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 16,
+            "total": 16,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "off",
+          "line": 23,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 1,
+            "total": 1,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "timerOff",
+          "line": 28,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 1,
+            "total": 1,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "roomTick",
+          "line": 33,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 1,
+            "total": 1,
+            "pct": 100.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "cse4392.SeasonSwitch$Room",
+      "branch": {
+        "covered": 0,
+        "total": 0,
+        "pct": 100.0
+      },
+      "line": {
+        "covered": 5,
+        "total": 5,
+        "pct": 100.0
+      },
+      "method": {
+        "covered": 2,
+        "total": 2,
+        "pct": 100.0
+      },
+      "methods": [
+        {
+          "name": "<init>",
+          "line": 71,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 16,
+            "total": 16,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "actionPerformed",
+          "line": 75,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 7,
+            "total": 7,
+            "pct": 100.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "cse4392.SeasonSwitch$Heater",
+      "branch": {
+        "covered": 0,
+        "total": 0,
+        "pct": 100.0
+      },
+      "line": {
+        "covered": 4,
+        "total": 4,
+        "pct": 100.0
+      },
+      "method": {
+        "covered": 3,
+        "total": 3,
+        "pct": 100.0
+      },
+      "methods": [
+        {
+          "name": "<init>",
+          "line": 66,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 9,
+            "total": 9,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "on",
+          "line": 68,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 4,
+            "total": 4,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "off",
+          "line": 69,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 4,
+            "total": 4,
+            "pct": 100.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "cse4392.HeatState",
+      "branch": {
+        "covered": 4,
+        "total": 4,
+        "pct": 100.0
+      },
+      "line": {
+        "covered": 23,
+        "total": 23,
+        "pct": 100.0
+      },
+      "method": {
+        "covered": 6,
+        "total": 6,
+        "pct": 100.0
+      },
+      "methods": [
+        {
+          "name": "<init>",
+          "line": 3,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 3,
+            "total": 3,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "cool",
+          "line": 6,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 19,
+            "total": 19,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "heat",
+          "line": 16,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 1,
+            "total": 1,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "off",
+          "line": 20,
+          "branch": {
+            "covered": 0,
+            "total": 0,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 16,
+            "total": 16,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "timerOff",
+          "line": 28,
+          "branch": {
+            "covered": 2,
+            "total": 2,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 26,
+            "total": 26,
+            "pct": 100.0
+          }
+        },
+        {
+          "name": "roomTick",
+          "line": 39,
+          "branch": {
+            "covered": 2,
+            "total": 2,
+            "pct": 100.0
+          },
+          "instruction": {
+            "covered": 20,
+            "total": 20,
+            "pct": 100.0
+          }
+        }
+      ]
+    }
+  ],
+  "missed_branches": [],
+  "missed_lines": [
+    {
+      "file": "cse4392/SeasonSwitch.java",
+      "line": 46
+    },
+    {
+      "file": "cse4392/SeasonSwitch.java",
+      "line": 51
+    },
+    {
+      "file": "cse4392/SeasonSwitch.java",
+      "line": 54
+    },
+    {
+      "file": "cse4392/SeasonSwitch.java",
+      "line": 59
+    }
+  ]
+}

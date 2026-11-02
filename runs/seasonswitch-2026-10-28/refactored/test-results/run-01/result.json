@@ -1,0 +1,455 @@
+{
+  "exit_code": 0,
+  "seconds": 25.4,
+  "maven_log": "/home/claude/ta3-multi-agent-testing/runs/seasonswitch-2026-10-28/refactored/test-results/run-01/maven.log",
+  "tests": [
+    {
+      "method": "tc_EP_01",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.098,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-01"
+    },
+    {
+      "method": "tc_EP_02",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.007,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-02"
+    },
+    {
+      "method": "tc_EP_03",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.004,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-03"
+    },
+    {
+      "method": "tc_EP_04",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.003,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-04"
+    },
+    {
+      "method": "tc_EP_06",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.003,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-06"
+    },
+    {
+      "method": "tc_EP_07",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.004,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-07"
+    },
+    {
+      "method": "tc_EP_08",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.005,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-08"
+    },
+    {
+      "method": "tc_EP_10",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.002,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-10"
+    },
+    {
+      "method": "tc_EP_11",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.002,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-11"
+    },
+    {
+      "method": "tc_EP_12",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.004,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-12"
+    },
+    {
+      "method": "tc_EP_14",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.0,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-14"
+    },
+    {
+      "method": "tc_EP_15",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.002,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-15"
+    },
+    {
+      "method": "tc_EP_16",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.003,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-16"
+    },
+    {
+      "method": "tc_EP_17",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.008,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-17"
+    },
+    {
+      "method": "tc_EP_18",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.0,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-18"
+    },
+    {
+      "method": "tc_EP_20",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.005,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-20"
+    },
+    {
+      "method": "tc_EP_21",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.0,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-21"
+    },
+    {
+      "method": "tc_EP_22",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.002,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-22"
+    },
+    {
+      "method": "tc_EP_23",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.003,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-23"
+    },
+    {
+      "method": "tc_EP_24",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.002,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-24"
+    },
+    {
+      "method": "tc_EP_25",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.004,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-25"
+    },
+    {
+      "method": "tc_EP_27",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 3.296,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-27"
+    },
+    {
+      "method": "tc_EP_28",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 3.271,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-28"
+    },
+    {
+      "method": "tc_EP_29",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 3.31,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-29"
+    },
+    {
+      "method": "tc_EP_30",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.323,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-30"
+    },
+    {
+      "method": "tc_EP_31",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.34,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "EP-31"
+    },
+    {
+      "method": "tc_BVA_01",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.002,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "BVA-01"
+    },
+    {
+      "method": "tc_BVA_02",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.001,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "BVA-02"
+    },
+    {
+      "method": "tc_BVA_03",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.002,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "BVA-03"
+    },
+    {
+      "method": "tc_BVA_04",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.002,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "BVA-04"
+    },
+    {
+      "method": "tc_BVA_05",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.001,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "BVA-05"
+    },
+    {
+      "method": "tc_BVA_06",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.0,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "BVA-06"
+    },
+    {
+      "method": "tc_BVA_07",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.001,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "BVA-07"
+    },
+    {
+      "method": "tc_BVA_08",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.002,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "BVA-08"
+    },
+    {
+      "method": "tc_BVA_09",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.004,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "BVA-09"
+    },
+    {
+      "method": "tc_BVA_10",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.001,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "BVA-10"
+    },
+    {
+      "method": "tc_BVA_11",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.002,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "BVA-11"
+    },
+    {
+      "method": "tc_BVA_12",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.002,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "BVA-12"
+    },
+    {
+      "method": "tc_BVA_16",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 3.265,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "BVA-16"
+    },
+    {
+      "method": "tc_BVA_17",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.32,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "BVA-17"
+    },
+    {
+      "method": "tc_BVA_18",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.308,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "BVA-18"
+    },
+    {
+      "method": "tc_BVA_19",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.345,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "BVA-19"
+    },
+    {
+      "method": "tc_BVA_20",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.321,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "BVA-20"
+    },
+    {
+      "method": "tc_REVIEW_01",
+      "class": "cse4392.SeasonSwitchTest",
+      "status": "passed",
+      "time": 0.002,
+      "type": "",
+      "message": "",
+      "trace": "",
+      "id": "REVIEW-01"
+    }
+  ],
+  "compile_errors": [],
+  "counts": {
+    "passed": 44,
+    "failed": 0,
+    "error": 0,
+    "skipped": 0
+  },
+  "status": "passed"
+}

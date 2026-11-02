@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1040" viewBox="0 0 1900 1040">
+<rect width="100%" height="100%" fill="white"/>
+<text x="950.0" y="44.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#0F172A">Data model: what the agents return, what the graph carries, what a run saves</text>
+<rect x="16" y="72" width="640" height="950" rx="16" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.6"/>
+<text x="32.0" y="102.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start" fill="#0F172A">Agent outputs  (schemas.py)</text>
+<text x="32.0" y="124.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400" text-anchor="start" fill="#475569" font-style="italic">Pydantic models; the JSON Schema goes into each prompt and Ollama's format</text>
+<rect x="36" y="148" width="290" height="106" rx="8" fill="white" stroke="#7C3AED" stroke-width="1.5"/>
+<path d="M36,202 L36,156 Q36,148 44,148 L318,148 Q326,148 326,156 L326,202 Z" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="181.0" y="172.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16.5" font-weight="700" text-anchor="middle" fill="#0F172A">TestSuiteDraft</text>
+<text x="181.0" y="191.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#475569" font-style="italic">EP, BVA and coverage agents</text>
+<text x="48.0" y="224.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">analysis: str</text>
+<text x="48.0" y="243.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">test_cases: list[TestCase]</text>
+<rect x="346" y="148" width="290" height="144" rx="8" fill="white" stroke="#7C3AED" stroke-width="1.5"/>
+<path d="M346,202 L346,156 Q346,148 354,148 L628,148 Q636,148 636,156 L636,202 Z" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="491.0" y="172.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16.5" font-weight="700" text-anchor="middle" fill="#0F172A">SuiteRevision</text>
+<text x="491.0" y="191.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#475569" font-style="italic">reviser (step 4)</text>
+<text x="358.0" y="224.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">summary: str</text>
+<text x="358.0" y="243.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">add: list[TestCase]</text>
+<text x="358.0" y="262.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">modify: list[TestCase]</text>
+<text x="358.0" y="281.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">delete: list[str]  (ids)</text>
+<rect x="156" y="340" width="360" height="201" rx="8" fill="white" stroke="#7C3AED" stroke-width="1.5"/>
+<path d="M156,394 L156,348 Q156,340 164,340 L508,340 Q516,340 516,348 L516,394 Z" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="336.0" y="364.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16.5" font-weight="700" text-anchor="middle" fill="#0F172A">TestCase</text>
+<text x="336.0" y="383.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#475569" font-style="italic">one JUnit 5 test</text>
+<text x="168.0" y="416.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">id: str  (EP-01, BVA-07, COV-02)</text>
+<text x="168.0" y="435.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">technique: EP | BVA | COVERAGE | REVIEW</text>
+<text x="168.0" y="454.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">method: str</text>
+<text x="168.0" y="473.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">condition: str  (the class or boundary)</text>
+<text x="168.0" y="492.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">input: str</text>
+<text x="168.0" y="511.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">expected: str</text>
+<text x="168.0" y="530.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">junit: str  (body of one @Test method)</text>
+<polygon points="181.0,254 175.0,263 181.0,272 187.0,263" fill="#334155" stroke="#334155" stroke-width="1"/>
+<polyline points="181.0,272.0 181.0,340.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="189.0" y="330.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#334155">1..*</text>
+<polygon points="491.0,292 485.0,301 491.0,310 497.0,301" fill="#334155" stroke="#334155" stroke-width="1"/>
+<polyline points="491.0,310.0 491.0,340.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="499.0" y="330.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#334155">0..*</text>
+<rect x="36" y="600" width="290" height="125" rx="8" fill="white" stroke="#7C3AED" stroke-width="1.5"/>
+<path d="M36,654 L36,608 Q36,600 44,600 L318,600 Q326,600 326,608 L326,654 Z" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="181.0" y="624.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16.5" font-weight="700" text-anchor="middle" fill="#0F172A">RepairPlan</text>
+<text x="181.0" y="643.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#475569" font-style="italic">repair agent, test adapter</text>
+<text x="48.0" y="676.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">diagnosis: str</text>
+<text x="48.0" y="695.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">test_edits: list[TestEdit]</text>
+<text x="48.0" y="714.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">code_edits: list[CodeEdit]</text>
+<rect x="386" y="590" width="250" height="145" rx="8" fill="white" stroke="#7C3AED" stroke-width="1.5"/>
+<path d="M386,626 L386,598 Q386,590 394,590 L628,590 Q636,590 636,598 L636,626 Z" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="511.0" y="614.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16.5" font-weight="700" text-anchor="middle" fill="#0F172A">TestEdit</text>
+<text x="398.0" y="648.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">id: str</text>
+<text x="398.0" y="667.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">action: modify | delete</text>
+<text x="398.0" y="686.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">expected: str</text>
+<text x="398.0" y="705.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">junit: str</text>
+<text x="398.0" y="724.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">reason: str</text>
+<rect x="386" y="755" width="250" height="107" rx="8" fill="white" stroke="#7C3AED" stroke-width="1.5"/>
+<path d="M386,791 L386,763 Q386,755 394,755 L628,755 Q636,755 636,763 L636,791 Z" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="511.0" y="779.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16.5" font-weight="700" text-anchor="middle" fill="#0F172A">CodeEdit</text>
+<text x="398.0" y="813.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">file: str</text>
+<text x="398.0" y="832.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">content: str  (whole file)</text>
+<text x="398.0" y="851.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">reason: str</text>
+<polygon points="326,650 335,656 344,650 335,644" fill="#334155" stroke="#334155" stroke-width="1"/>
+<polyline points="344.0,650.0 386.0,650.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="352.0" y="642.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#334155">0..*</text>
+<polygon points="181.0,725 175.0,734 181.0,743 187.0,734" fill="#334155" stroke="#334155" stroke-width="1"/>
+<polyline points="181.0,743.0 181.0,808.5 386.0,808.5" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="352.0" y="800.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#334155">0..*</text>
+<rect x="36" y="885" width="600" height="125" rx="8" fill="white" stroke="#7C3AED" stroke-width="1.5"/>
+<path d="M36,939 L36,893 Q36,885 44,885 L628,885 Q636,885 636,893 L636,939 Z" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="336.0" y="909.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16.5" font-weight="700" text-anchor="middle" fill="#0F172A">Refactoring reply  (text, no schema)</text>
+<text x="336.0" y="928.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#475569" font-style="italic">refactoring agent (step 8)</text>
+<text x="48.0" y="961.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">a design section with the transition table</text>
+<text x="48.0" y="980.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">then one ```java block per file, each starting // File: X.java</text>
+<text x="48.0" y="999.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">split into files by tools/refactor_parse.py</text>
+<rect x="676" y="72" width="520" height="950" rx="16" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.6"/>
+<text x="692.0" y="102.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start" fill="#0F172A">Workflow state  (state.py)</text>
+<rect x="696" y="120" width="480" height="505" rx="8" fill="white" stroke="#475569" stroke-width="1.5"/>
+<path d="M696,174 L696,128 Q696,120 704,120 L1168,120 Q1176,120 1176,128 L1176,174 Z" fill="#E2E8F0" stroke="#475569" stroke-width="1.5"/>
+<text x="936.0" y="144.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16.5" font-weight="700" text-anchor="middle" fill="#0F172A">AgentState</text>
+<text x="936.0" y="163.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#475569" font-style="italic">LangGraph TypedDict: each node reads it and returns an update</text>
+<text x="708.0" y="196.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#475569">System under test</text>
+<text x="708.0" y="215.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">run_id, sut_file, class_name, package</text>
+<text x="708.0" y="234.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">observed: str  (what main() printed)</text>
+<text x="708.0" y="253.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">testability: phase → notes for the prompts</text>
+<text x="708.0" y="272.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">projects: phase → Maven project folder</text>
+<text x="708.0" y="291.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">phase: original | refactored</text>
+<text x="708.0" y="310.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#475569">Test design (steps 1-4)</text>
+<text x="708.0" y="329.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">ep_cases, bva_cases: list[TestCase]</text>
+<text x="708.0" y="348.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">suite: list[TestCase]  (the cases in use)</text>
+<text x="708.0" y="367.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">curation: duplicates, conflicts</text>
+<text x="708.0" y="386.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">review_round, review_action, review_feedback</text>
+<text x="708.0" y="405.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#475569">Testing and repair (steps 5-6, 10)</text>
+<text x="708.0" y="424.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">last_run: result of the latest mvn test</text>
+<text x="708.0" y="443.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">run_counter: phase → runs; repair_round</text>
+<text x="708.0" y="462.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#475569">Coverage (steps 7, 11-12)</text>
+<text x="708.0" y="481.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">coverage: phase → JaCoCo summary</text>
+<text x="708.0" y="500.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">coverage_round</text>
+<text x="708.0" y="519.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#475569">Refactoring (steps 8-9)</text>
+<text x="708.0" y="538.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">refactor_attempt, refactor_round</text>
+<text x="708.0" y="557.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">refactor_compile, pattern_report, refactor_action</text>
+<text x="708.0" y="576.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#475569">Control</text>
+<text x="708.0" y="595.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">stuck_reason, halted, finished</text>
+<text x="708.0" y="614.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">events: list  (every node appends one)</text>
+<path d="M756,816 L756,944 A180.0,16 0 0 0 1116,944 L1116,816" fill="#F1F5F9" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="936.0" cy="816" rx="180.0" ry="16" fill="#F1F5F9" stroke="#475569" stroke-width="1.8"/>
+<text x="936.0" y="850.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle" fill="#0F172A">checkpoints.sqlite</text>
+<text x="936.0" y="874.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#1E293B">SqliteSaver: the AgentState after every</text>
+<text x="936.0" y="893.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#1E293B">step of a run (thread id = run id);</text>
+<text x="936.0" y="912.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#1E293B">resume, status and report read it</text>
+<polyline points="936.0,625.0 936.0,802.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="936.0,802 931.0,792 941.0,792" fill="#334155"/>
+<text x="946.0" y="717.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#334155">saved after every step</text>
+<polyline points="516.0,440.5 696.0,440.5" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="696,440.5 686,435.5 686,445.5" fill="#334155"/>
+<text x="606.0" y="430.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">merged into suite</text>
+<rect x="1216" y="72" width="668" height="950" rx="16" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.6"/>
+<text x="1232.0" y="102.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start" fill="#0F172A">Run artifacts  (runs/&lt;run-id&gt;/)</text>
+<rect x="1236" y="120" width="304" height="95" rx="12" fill="white" stroke="#475569" stroke-width="2.2"/>
+<text x="1250.0" y="146.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" text-anchor="start" fill="#0F172A">&lt;phase&gt;/test-cases.json, .md</text>
+<text x="1250.0" y="168.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">the TestCase list of each phase</text>
+<text x="1250.0" y="187.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">also: ids merged into a case</text>
+<rect x="1236" y="229" width="304" height="134" rx="12" fill="white" stroke="#475569" stroke-width="2.2"/>
+<text x="1250.0" y="255.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" text-anchor="start" fill="#0F172A">test-results/run-NN/result.json</text>
+<text x="1250.0" y="277.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">status: passed, failed, compile_error</text>
+<text x="1250.0" y="296.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">counts: passed, failed, error, skipped</text>
+<text x="1250.0" y="316.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">tests[]: id, status, message</text>
+<text x="1250.0" y="335.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">compile_errors[]: test id, line, text</text>
+<rect x="1236" y="377" width="304" height="134" rx="12" fill="white" stroke="#475569" stroke-width="2.2"/>
+<text x="1250.0" y="403.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" text-anchor="start" fill="#0F172A">coverage/run-NN/summary.json</text>
+<text x="1250.0" y="425.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">branch, line, instruction, method:</text>
+<text x="1250.0" y="444.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">covered, total, pct</text>
+<text x="1250.0" y="464.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">classes[]: per class and method</text>
+<text x="1250.0" y="483.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">missed_branches[], missed_lines[]</text>
+<rect x="1236" y="525" width="304" height="95" rx="12" fill="white" stroke="#475569" stroke-width="2.2"/>
+<text x="1250.0" y="551.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" text-anchor="start" fill="#0F172A">test-design/curation.json</text>
+<text x="1250.0" y="573.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">ep_received, bva_received, distinct</text>
+<text x="1250.0" y="592.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">duplicates[], conflicts[]</text>
+<rect x="1236" y="634" width="304" height="114" rx="12" fill="white" stroke="#475569" stroke-width="2.2"/>
+<text x="1250.0" y="660.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" text-anchor="start" fill="#0F172A">&lt;phase&gt;/project/</text>
+<text x="1250.0" y="682.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">the Maven project: src/main/java,</text>
+<text x="1250.0" y="701.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">src/test/java (JUnit + TestSupport),</text>
+<text x="1250.0" y="721.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">target/ (Surefire and JaCoCo)</text>
+<rect x="1560" y="120" width="304" height="134" rx="12" fill="white" stroke="#475569" stroke-width="2.2"/>
+<text x="1574.0" y="146.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" text-anchor="start" fill="#0F172A">refactored/pattern-check.json</text>
+<text x="1574.0" y="168.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">checks[]: id, check, result, detail</text>
+<text x="1574.0" y="187.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">state_type, concrete_states</text>
+<text x="1574.0" y="207.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">switch and branch counts,</text>
+<text x="1574.0" y="226.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">before and after</text>
+<rect x="1560" y="268" width="304" height="134" rx="12" fill="white" stroke="#475569" stroke-width="2.2"/>
+<text x="1574.0" y="294.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" text-anchor="start" fill="#0F172A">changes.jsonl, changes.md</text>
+<text x="1574.0" y="316.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">n, time, phase, agent, kind,</text>
+<text x="1574.0" y="335.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">target, action, round, reason,</text>
+<text x="1574.0" y="355.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">diff (unified); every TestEdit,</text>
+<text x="1574.0" y="374.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">CodeEdit and revision is one entry</text>
+<rect x="1560" y="416" width="304" height="95" rx="12" fill="white" stroke="#475569" stroke-width="2.2"/>
+<text x="1574.0" y="442.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" text-anchor="start" fill="#0F172A">llm/NNN-&lt;agent&gt;.prompt.md</text>
+<text x="1574.0" y="464.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">and .response.md: every prompt</text>
+<text x="1574.0" y="483.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">and reply, in order</text>
+<rect x="1560" y="525" width="304" height="95" rx="12" fill="white" stroke="#475569" stroke-width="2.2"/>
+<text x="1574.0" y="551.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" text-anchor="start" fill="#0F172A">trace.log, trace.jsonl</text>
+<text x="1574.0" y="573.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">every step: node, thread,</text>
+<text x="1574.0" y="592.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">timing, events</text>
+<rect x="1560" y="634" width="304" height="114" rx="12" fill="white" stroke="#475569" stroke-width="2.2"/>
+<text x="1574.0" y="660.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="700" text-anchor="start" fill="#0F172A">final/</text>
+<text x="1574.0" y="682.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">original/ and refactored/: Maven</text>
+<text x="1574.0" y="701.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">projects with tests, results</text>
+<text x="1574.0" y="721.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#1E293B">and coverage; summary.md</text>
+<polyline points="1176.0,167.5 1236.0,167.5" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="1236,167.5 1226,162.5 1226,172.5" fill="#334155"/>
+<text x="1206.0" y="157.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">write</text>
+</svg>

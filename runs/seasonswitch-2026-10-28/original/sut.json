@@ -1,0 +1,14 @@
+{
+  "class": "cse4392.SeasonSwitch",
+  "package": "cse4392",
+  "has_main": true,
+  "public_api": [
+    "public cse4392.SeasonSwitch()",
+    "public static void main(java.lang.String[])",
+    "public void actionPerformed(java.awt.event.ActionEvent)",
+    "public void cool()",
+    "public void heat()",
+    "public void off()",
+    "public void timerOff()"
+  ]
+}

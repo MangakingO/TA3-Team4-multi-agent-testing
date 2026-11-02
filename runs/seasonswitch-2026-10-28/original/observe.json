@@ -1,0 +1,45 @@
+[
+  {
+    "args": [],
+    "exit_code": null,
+    "stopped": true,
+    "out": "Enter off, cool or heat to run. Press Ctrl-c to exit.\nCooling started. RmTemp=70\nCooling stopped. RmTemp=68\nCooling started. RmTemp=71\nCooling stopped. RmTemp=68",
+    "err": ""
+  },
+  {
+    "args": [
+      "cool"
+    ],
+    "exit_code": null,
+    "stopped": true,
+    "out": "Enter off, cool or heat to run. Press Ctrl-c to exit.\nCooling started. RmTemp=70\nCooling stopped. RmTemp=68\nCooling started. RmTemp=71\nCooling stopped. RmTemp=68",
+    "err": ""
+  },
+  {
+    "args": [
+      "heat"
+    ],
+    "exit_code": null,
+    "stopped": true,
+    "out": "Enter off, cool or heat to run. Press Ctrl-c to exit.\nHeating started. RmTemp=70\nHeating started. RmTemp=72\nHeating started. RmTemp=75\nHeating stopped. RmTemp=78",
+    "err": ""
+  },
+  {
+    "args": [
+      "off"
+    ],
+    "exit_code": 0,
+    "stopped": false,
+    "out": "Enter off, cool or heat to run. Press Ctrl-c to exit.\nSystem off. System exits.",
+    "err": ""
+  },
+  {
+    "args": [
+      "warm"
+    ],
+    "exit_code": 1,
+    "stopped": false,
+    "out": "Enter off, cool or heat to run. Press Ctrl-c to exit.\nUnknown command. System exits.",
+    "err": ""
+  }
+]

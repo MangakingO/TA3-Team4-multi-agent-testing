@@ -1,0 +1,94 @@
+$ /opt/maven/bin/mvn -B -s /tmp/claude-0/-home-claude/8536a58e-64f3-56fd-9bc0-cc23c595429b/scratchpad/toolchain/settings.xml -Dmaven.test.failure.ignore=true test
+# exit code 0, 25.3s
+
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< edu.uta.cse4392.team4:season-switch >-----------------
+[INFO] Building season-switch 1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.0:resources (default-resources) @ season-switch ---
+[INFO] skip non existing resourceDirectory /home/claude/ta3-multi-agent-testing/runs/seasonswitch-2026-10-28/original/project/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ season-switch ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/claude/ta3-multi-agent-testing/runs/seasonswitch-2026-10-28/original/project/target/classes
+[INFO] 
+[INFO] --- resources:3.3.0:testResources (default-testResources) @ season-switch ---
+[INFO] skip non existing resourceDirectory /home/claude/ta3-multi-agent-testing/runs/seasonswitch-2026-10-28/original/project/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ season-switch ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /home/claude/ta3-multi-agent-testing/runs/seasonswitch-2026-10-28/original/project/target/test-classes
+[INFO] 
+[INFO] --- surefire:2.22.3:test (default-test) @ season-switch ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running cse4392.SeasonSwitchTest
+Cooling started. RmTemp=70
+Heating started. RmTemp=70
+Heating started. RmTemp=70
+Cooling started. RmTemp=70
+Cooling started. RmTemp=70
+Heating started. RmTemp=70
+Cooling started. RmTemp=70
+Cooling started. RmTemp=70
+Cooling started. RmTemp=70
+Heating started. RmTemp=70
+Heating started. RmTemp=70
+Cooling started. RmTemp=70
+Cooling started. RmTemp=70
+Cooling started. RmTemp=70
+Cooling started. RmTemp=70
+Heating started. RmTemp=70
+Heating started. RmTemp=70
+Cooling started. RmTemp=70
+Cooling started. RmTemp=70
+Cooling started. RmTemp=70
+Cooling started. RmTemp=70
+Heating started. RmTemp=70
+Heating started. RmTemp=70
+Heating started. RmTemp=70
+Cooling started. RmTemp=70
+Cooling started. RmTemp=70
+Cooling started. RmTemp=70
+Cooling stopped. RmTemp=68
+Heating started. RmTemp=70
+Heating started. RmTemp=70
+Heating started. RmTemp=70
+Heating stopped. RmTemp=77
+Cooling started. RmTemp=70
+[ERROR] Tests run: 51, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.683 s <<< FAILURE! - in cse4392.SeasonSwitchTest
+[ERROR] tc_REVIEW_01  Time elapsed: 0.025 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+expected: <> but was: <Cooling stopped. RmTemp=70
+>
+	at cse4392.SeasonSwitchTest.tc_REVIEW_01(SeasonSwitchTest.java:585)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   SeasonSwitchTest.tc_REVIEW_01:585 expected: <> but was: <Cooling stopped. RmTemp=70
+>
+[INFO] 
+[ERROR] Tests run: 51, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[ERROR] There are test failures.
+
+Please refer to /home/claude/ta3-multi-agent-testing/runs/seasonswitch-2026-10-28/original/project/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[INFO] 
+[INFO] --- exec:3.1.0:exec (jacoco-report) @ season-switch ---
+[jacoco-report] wrote /home/claude/ta3-multi-agent-testing/runs/seasonswitch-2026-10-28/original/project/target/site/jacoco
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  23.495 s
+[INFO] Finished at: 2026-10-28T08:03:23-05:00
+[INFO] ------------------------------------------------------------------------
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=40649 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=40649 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=

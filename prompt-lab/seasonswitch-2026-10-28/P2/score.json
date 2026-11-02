@@ -1,0 +1,90 @@
+{
+  "files": [
+    "CoolState.java",
+    "HeatState.java",
+    "OffState.java",
+    "SeasonState.java",
+    "SeasonSwitch.java"
+  ],
+  "compiles": true,
+  "checks_passed": 8,
+  "checks_total": 8,
+  "tests_total": 51,
+  "tests_compile": 44,
+  "tests_passed": 44,
+  "branch": {
+    "covered": 16,
+    "total": 16,
+    "pct": 100.0
+  },
+  "problems": [
+    "7 test(s) no longer compile: BVA-13, BVA-14, EP-05, EP-09, EP-13, EP-19, EP-26"
+  ],
+  "checks": [
+    {
+      "id": "subject",
+      "check": "Subject class keeps the original name",
+      "result": "PASS",
+      "detail": "cse4392.SeasonSwitch"
+    },
+    {
+      "id": "interface",
+      "check": "Subject keeps exactly the original public interface",
+      "result": "PASS",
+      "detail": "all original public members present"
+    },
+    {
+      "id": "state_type",
+      "check": "An abstract State type (interface or abstract class)",
+      "result": "PASS",
+      "detail": "cse4392.SeasonState (abstract class)"
+    },
+    {
+      "id": "concrete_states",
+      "check": "One concrete class per state",
+      "result": "PASS",
+      "detail": "CoolState, HeatState, OffState"
+    },
+    {
+      "id": "members",
+      "check": "Members the tests use are still there (non-private fields, methods, nested classes)",
+      "result": "PASS",
+      "detail": "all present"
+    },
+    {
+      "id": "delegation",
+      "check": "Subject holds a reference to its current State",
+      "result": "PASS",
+      "detail": "private SeasonState state"
+    },
+    {
+      "id": "no_type_tests",
+      "check": "No instanceof tests on states in the Subject family",
+      "result": "PASS",
+      "detail": "0 instanceof instruction(s) in SeasonSwitch$AC, SeasonSwitch$Heater, SeasonSwitch$Room, SeasonSwitch"
+    },
+    {
+      "id": "conditionals",
+      "check": "No switch on the state left in the Subject family",
+      "result": "PASS",
+      "detail": "switch statements 5 -> 0; conditional branch instructions 13 -> 4 in SeasonSwitch$AC, SeasonSwitch$Heater, SeasonSwitch$Room, SeasonSwitch; all concrete states together 4"
+    },
+    {
+      "id": "transitions",
+      "check": "Who decides the next state",
+      "result": "INFO",
+      "detail": "the State classes (CoolState, HeatState, OffState) receive the Subject and set its next state"
+    }
+  ],
+  "not_compiling": [
+    "BVA-13",
+    "BVA-14",
+    "EP-05",
+    "EP-09",
+    "EP-13",
+    "EP-19",
+    "EP-26"
+  ],
+  "failed": [],
+  "version": "P2"
+}

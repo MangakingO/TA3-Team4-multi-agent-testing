@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: cse4392.SeasonSwitchTest
+-------------------------------------------------------------------------------
+Tests run: 51, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.683 s <<< FAILURE! - in cse4392.SeasonSwitchTest
+tc_REVIEW_01  Time elapsed: 0.025 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+expected: <> but was: <Cooling stopped. RmTemp=70
+>
+	at cse4392.SeasonSwitchTest.tc_REVIEW_01(SeasonSwitchTest.java:585)
+

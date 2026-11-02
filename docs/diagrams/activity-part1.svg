@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="950" height="810" viewBox="0 0 950 810">
+<rect width="100%" height="100%" fill="white"/>
+<rect x="16" y="16" width="450" height="742" rx="16" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.4"/>
+<text x="95.7" y="50.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="start" fill="#0F172A">Steps 1-4</text>
+<text x="193.2" y="50.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#0F172A">Design the test cases</text>
+<circle cx="266" cy="80" r="11" fill="#0F172A"/>
+<rect x="132.0" y="106.0" width="268" height="84" rx="14" fill="#E2E8F0" stroke="#475569" stroke-width="1.6"/>
+<text x="266.0" y="133.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">Setup: compile with Maven,</text>
+<text x="266.0" y="153.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">run the program, analyze</text>
+<text x="266.0" y="173.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">its testability</text>
+<polyline points="266.0,91.0 266.0,106.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="266,106.0 261,96.0 271,96.0" fill="#334155"/>
+<rect x="52" y="224.0" width="396" height="8" rx="2" fill="#0F172A"/>
+<polyline points="266.0,190.0 266.0,224.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="278.0" y="216.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#475569" font-style="italic">fork (parallel)</text>
+<rect x="50.0" y="256.0" width="196" height="84" rx="14" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.6"/>
+<text x="148.0" y="283.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">EP agent:</text>
+<text x="148.0" y="303.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">equivalence</text>
+<text x="148.0" y="323.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">partitioning tests</text>
+<rect x="254.0" y="256.0" width="196" height="84" rx="14" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.6"/>
+<text x="352.0" y="283.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">BVA agent:</text>
+<text x="352.0" y="303.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">boundary value</text>
+<text x="352.0" y="323.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">analysis tests</text>
+<polyline points="148.0,232.0 148.0,256.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="148,256.0 143,246.0 153,246.0" fill="#334155"/>
+<polyline points="148.0,340.0 148.0,364.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="148,364 143,354 153,354" fill="#334155"/>
+<polyline points="352.0,232.0 352.0,256.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="352,256.0 347,246.0 357,246.0" fill="#334155"/>
+<polyline points="352.0,340.0 352.0,364.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="352,364 347,354 357,354" fill="#334155"/>
+<rect x="52" y="364.0" width="396" height="8" rx="2" fill="#0F172A"/>
+<text x="278.0" y="392.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#475569" font-style="italic">join (waits for both)</text>
+<rect x="132.0" y="408.0" width="268" height="64" rx="14" fill="#E2E8F0" stroke="#475569" stroke-width="1.6"/>
+<text x="266.0" y="435.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">Curator: merge the two sets</text>
+<text x="266.0" y="455.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">and remove duplicates</text>
+<polyline points="266.0,372.0 266.0,408.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="266,408.0 261,398.0 271,398.0" fill="#334155"/>
+<polygon points="266,492 280,506 266,520 252,506" fill="white" stroke="#0F172A" stroke-width="1.6"/>
+<polyline points="266.0,472.0 266.0,492.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="266,492 261,482 271,482" fill="#334155"/>
+<rect x="151.0" y="536.0" width="230" height="64" rx="14" fill="#FEF3C7" stroke="#D97706" stroke-width="1.6"/>
+<text x="266.0" y="563.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">Tester reviews</text>
+<text x="266.0" y="583.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">the test cases</text>
+<polyline points="266.0,520.0 266.0,536.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="266,536.0 261,526.0 271,526.0" fill="#334155"/>
+<polygon points="266,638 280,652 266,666 252,652" fill="white" stroke="#0F172A" stroke-width="1.6"/>
+<polyline points="266.0,600.0 266.0,638.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="266,638 261,628 271,628" fill="#334155"/>
+<rect x="34.0" y="610.0" width="140" height="84" rx="14" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.6"/>
+<text x="104.0" y="637.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">Reviser applies</text>
+<text x="104.0" y="657.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">the requested</text>
+<text x="104.0" y="677.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">changes</text>
+<polyline points="252.0,652.0 174.0,652.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="174.0,652 184.0,647 184.0,657" fill="#334155"/>
+<text x="180.0" y="644.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#334155">[changes]</text>
+<polyline points="104.0,610.0 104.0,506.0 252.0,506.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="252,506 242,501 242,511" fill="#334155"/>
+<circle cx="266" cy="728" r="17" fill="white" stroke="#0F172A" stroke-width="1.6"/>
+<text x="266.0" y="734.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#0F172A">A</text>
+<polyline points="266.0,666.0 266.0,711.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="266,711 261,701 271,701" fill="#334155"/>
+<text x="276.0" y="696.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#334155">[accepted]</text>
+<rect x="484" y="16" width="450" height="742" rx="16" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.4"/>
+<text x="562.5" y="50.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="start" fill="#0F172A">Steps 5-7</text>
+<text x="661.7" y="50.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#0F172A">Test the original code</text>
+<circle cx="620" cy="84" r="17" fill="white" stroke="#0F172A" stroke-width="1.6"/>
+<text x="620.0" y="90.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#0F172A">A</text>
+<polygon points="620,132 634,146 620,160 606,146" fill="white" stroke="#0F172A" stroke-width="1.6"/>
+<polygon points="620,182 634,196 620,210 606,196" fill="white" stroke="#0F172A" stroke-width="1.6"/>
+<polyline points="620.0,101.0 620.0,132.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="620,132 615,122 625,122" fill="#334155"/>
+<polyline points="620.0,160.0 620.0,182.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="620,182 615,172 625,172" fill="#334155"/>
+<rect x="504.0" y="230.0" width="232" height="64" rx="14" fill="#E2E8F0" stroke="#475569" stroke-width="1.6"/>
+<text x="620.0" y="257.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">Run all test cases</text>
+<text x="620.0" y="277.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">(mvn test, JUnit 5)</text>
+<polyline points="620.0,210.0 620.0,230.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="620,230.0 615,220.0 625,220.0" fill="#334155"/>
+<polygon points="620,322 634,336 620,350 606,336" fill="white" stroke="#0F172A" stroke-width="1.6"/>
+<polyline points="620.0,294.0 620.0,322.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="620,322 615,312 625,312" fill="#334155"/>
+<rect x="744.0" y="294.0" width="160" height="84" rx="14" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.6"/>
+<text x="824.0" y="321.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">Repair agent:</text>
+<text x="824.0" y="341.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">fix the code or</text>
+<text x="824.0" y="361.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">the test; log it</text>
+<polyline points="634.0,336.0 744.0,336.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="744.0,336 734.0,331 734.0,341" fill="#334155"/>
+<text x="642.0" y="327.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#334155">[failures]</text>
+<polyline points="824.0,294.0 824.0,196.0 634.0,196.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="634,196 644,191 644,201" fill="#334155"/>
+<rect x="504.0" y="400.0" width="232" height="64" rx="14" fill="#E2E8F0" stroke="#475569" stroke-width="1.6"/>
+<text x="620.0" y="427.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">Measure branch</text>
+<text x="620.0" y="447.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">coverage (JaCoCo)</text>
+<polyline points="620.0,350.0 620.0,400.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="620,400.0 615,390.0 625,390.0" fill="#334155"/>
+<text x="630.0" y="390.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#334155">[all pass]</text>
+<polygon points="620,492 634,506 620,520 606,506" fill="white" stroke="#0F172A" stroke-width="1.6"/>
+<polyline points="620.0,464.0 620.0,492.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="620,492 615,482 625,482" fill="#334155"/>
+<rect x="744.0" y="464.0" width="160" height="84" rx="14" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.6"/>
+<text x="824.0" y="491.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">Coverage agent:</text>
+<text x="824.0" y="511.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">tests for branches</text>
+<text x="824.0" y="531.8" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#0F172A">never taken</text>
+<polyline points="634.0,506.0 744.0,506.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="744.0,506 734.0,501 734.0,511" fill="#334155"/>
+<text x="642.0" y="497.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#334155">[&lt; 100%]</text>
+<polyline points="904.0,506.0 920.0,506.0 920.0,146.0 634.0,146.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="634,146 644,141 644,151" fill="#334155"/>
+<circle cx="620" cy="600" r="17" fill="white" stroke="#0F172A" stroke-width="1.6"/>
+<text x="620.0" y="606.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#0F172A">B</text>
+<polyline points="620.0,520.0 620.0,583.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="620,583 615,573 625,573" fill="#334155"/>
+<text x="630.0" y="556.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#334155">[100%]</text>
+<rect x="24" y="777" width="26" height="18" rx="5" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.4"/>
+<text x="60.0" y="791.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start" fill="#0F172A">LLM agent (Ollama)</text>
+<rect x="232.765625" y="777" width="26" height="18" rx="5" fill="#E2E8F0" stroke="#475569" stroke-width="1.4"/>
+<text x="268.8" y="791.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start" fill="#0F172A">Tool (Maven, JaCoCo, javap, Python)</text>
+<rect x="565.796875" y="777" width="26" height="18" rx="5" fill="#FEF3C7" stroke="#D97706" stroke-width="1.4"/>
+<text x="601.8" y="791.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start" fill="#0F172A">Person (human in the loop)</text>
+</svg>

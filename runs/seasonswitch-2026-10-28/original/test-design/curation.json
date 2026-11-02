@@ -1,0 +1,14 @@
+{
+  "ep_received": 31,
+  "bva_received": 20,
+  "duplicates": [
+    {
+      "kept": "EP-27",
+      "removed": "BVA-15",
+      "rule": "identical test code"
+    }
+  ],
+  "conflicts": [],
+  "dropped": [],
+  "distinct": 50
+}

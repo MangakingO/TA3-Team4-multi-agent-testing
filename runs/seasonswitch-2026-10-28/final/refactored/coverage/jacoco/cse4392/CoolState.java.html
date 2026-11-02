@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CoolState.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">season-switch</a> &gt; <a href="index.source.html" class="el_package">cse4392</a> &gt; <span class="el_source">CoolState.java</span></div><h1>CoolState.java</h1><pre class="source lang-java linenums">package cse4392;
+
+<span class="fc" id="L3">class CoolState extends SeasonState {</span>
+    @Override
+    void cool(SeasonSwitch s) {
+        // already cooling
+<span class="fc" id="L7">    }</span>
+
+    @Override
+    void heat(SeasonSwitch s) {
+<span class="fc" id="L11">        s.ac.off();</span>
+<span class="fc" id="L12">        s.heater.on();</span>
+<span class="fc" id="L13">        s.timer.start();</span>
+<span class="fc" id="L14">        s.setState(HEAT);</span>
+<span class="fc" id="L15">        System.out.println(&quot;Heating started. RmTemp=&quot; + s.room.temp);</span>
+<span class="fc" id="L16">    }</span>
+
+    @Override
+    void off(SeasonSwitch s) {
+<span class="fc" id="L20">        s.ac.off();</span>
+<span class="fc" id="L21">        s.timer.stop();</span>
+<span class="fc" id="L22">        s.setState(OFF);</span>
+<span class="fc" id="L23">        System.out.println(&quot;Cooling stopped. RmTemp=&quot; + s.room.temp);</span>
+<span class="fc" id="L24">    }</span>
+
+    @Override
+    void timerOff(SeasonSwitch s) {
+<span class="fc bfc" id="L28" title="All 2 branches covered.">        if (s.room.temp &gt; s.coolTemp) {</span>
+<span class="fc" id="L29">            s.ac.on();</span>
+<span class="fc" id="L30">            System.out.println(&quot;Cooling started. RmTemp=&quot; + s.room.temp);</span>
+        } else {
+<span class="fc" id="L32">            s.ac.off();</span>
+<span class="fc" id="L33">            System.out.println(&quot;Cooling stopped. RmTemp=&quot; + s.room.temp);</span>
+        }
+<span class="fc" id="L35">    }</span>
+
+    @Override
+    void roomTick(SeasonSwitch s) {
+<span class="fc bfc" id="L39" title="All 2 branches covered.">        if (s.ac.isOn) {</span>
+<span class="fc" id="L40">            s.room.temp--;</span>
+        } else {
+<span class="fc" id="L42">            s.room.temp++;</span>
+        }
+<span class="fc" id="L44">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.0000</span></div></body></html>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Maven project for the system under test (SeasonSwitch.java).
+
+  Observe the original program (What To Do, item 2):
+      mvn compile exec:java                        (no argument = cool)
+      mvn compile exec:java -Dexec.args="heat"     (also: cool, off, or anything else)
+  The program keeps running until you press Ctrl+C (except for "off" and unknown commands).
+  Run the tests and write the JaCoCo coverage report to target/site/jacoco:
+      mvn test
+
+  The agent system copies this file into every Maven project it creates
+  (runs/<run>/original/project and runs/<run>/refactored/project).
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>edu.uta.cse4392.team4</groupId>
+  <artifactId>season-switch</artifactId>
+  <version>1.0</version>
+  <packaging>jar</packaging>
+  <name>SeasonSwitch (system under test)</name>
+
+  <properties>
+    <!-- Java 17 or later. Change to 21 or 25 to match your JDK if you like. -->
+    <maven.compiler.release>17</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <!-- Fully qualified name of the class with main(); the agent sets it from the source file. -->
+    <exec.mainClass>cse4392.SeasonSwitch</exec.mainClass>
+    <junit.version>5.14.4</junit.version>
+    <jacoco.version>0.8.15</jacoco.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.14.0</version>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.5.5</version>
+      </plugin>
+
+      <!-- Branch coverage: prepare-agent instruments the test JVM, report writes
+           target/site/jacoco/{index.html, jacoco.xml, jacoco.csv} after the tests. -->
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>${jacoco.version}</version>
+        <executions>
+          <execution>
+            <id>prepare-agent</id>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>report</id>
+            <phase>test</phase>
+            <goals>
+              <goal>report</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- mvn exec:java runs the class named by exec.mainClass -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.5.0</version>
+        <configuration>
+          <mainClass>${exec.mainClass}</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

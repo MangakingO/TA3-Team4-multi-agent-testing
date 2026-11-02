@@ -1,0 +1,162 @@
+{
+  "checks": [
+    {
+      "id": "subject",
+      "check": "Subject class keeps the original name",
+      "result": "PASS",
+      "detail": "cse4392.SeasonSwitch"
+    },
+    {
+      "id": "interface",
+      "check": "Subject keeps exactly the original public interface",
+      "result": "PASS",
+      "detail": "all original public members present"
+    },
+    {
+      "id": "state_type",
+      "check": "An abstract State type (interface or abstract class)",
+      "result": "PASS",
+      "detail": "cse4392.SeasonState (abstract class)"
+    },
+    {
+      "id": "concrete_states",
+      "check": "One concrete class per state",
+      "result": "PASS",
+      "detail": "CoolState, HeatState, OffState"
+    },
+    {
+      "id": "members",
+      "check": "Members the tests use are still there (non-private fields, methods, nested classes)",
+      "result": "PASS",
+      "detail": "all present"
+    },
+    {
+      "id": "delegation",
+      "check": "Subject holds a reference to its current State",
+      "result": "PASS",
+      "detail": "private SeasonState state"
+    },
+    {
+      "id": "no_type_tests",
+      "check": "No instanceof tests on states in the Subject family",
+      "result": "PASS",
+      "detail": "0 instanceof instruction(s) in SeasonSwitch$AC, SeasonSwitch$Heater, SeasonSwitch$Room, SeasonSwitch"
+    },
+    {
+      "id": "conditionals",
+      "check": "No switch on the state left in the Subject family",
+      "result": "PASS",
+      "detail": "switch statements 5 -> 0; conditional branch instructions 13 -> 4 in SeasonSwitch$AC, SeasonSwitch$Heater, SeasonSwitch$Room, SeasonSwitch; all concrete states together 4"
+    },
+    {
+      "id": "transitions",
+      "check": "Who decides the next state",
+      "result": "INFO",
+      "detail": "the State classes (CoolState, HeatState, OffState) receive the Subject and set its next state"
+    }
+  ],
+  "passed": true,
+  "state_type": "cse4392.SeasonState",
+  "concrete_states": [
+    "CoolState",
+    "HeatState",
+    "OffState"
+  ],
+  "classes": [
+    {
+      "name": "cse4392.CoolState",
+      "kind": "class",
+      "extends": [
+        "cse4392.SeasonState"
+      ],
+      "implements": [],
+      "branch_ops": 2,
+      "public_members": []
+    },
+    {
+      "name": "cse4392.HeatState",
+      "kind": "class",
+      "extends": [
+        "cse4392.SeasonState"
+      ],
+      "implements": [],
+      "branch_ops": 2,
+      "public_members": []
+    },
+    {
+      "name": "cse4392.OffState",
+      "kind": "class",
+      "extends": [
+        "cse4392.SeasonState"
+      ],
+      "implements": [],
+      "branch_ops": 0,
+      "public_members": []
+    },
+    {
+      "name": "cse4392.SeasonState",
+      "kind": "abstract class",
+      "extends": [],
+      "implements": [],
+      "branch_ops": 0,
+      "public_members": []
+    },
+    {
+      "name": "cse4392.SeasonSwitch$AC",
+      "kind": "class",
+      "extends": [],
+      "implements": [],
+      "branch_ops": 0,
+      "public_members": [
+        "public void off()",
+        "public void on()"
+      ]
+    },
+    {
+      "name": "cse4392.SeasonSwitch$Heater",
+      "kind": "class",
+      "extends": [],
+      "implements": [],
+      "branch_ops": 0,
+      "public_members": [
+        "public void off()",
+        "public void on()"
+      ]
+    },
+    {
+      "name": "cse4392.SeasonSwitch$Room",
+      "kind": "class",
+      "extends": [],
+      "implements": [
+        "java.awt.event.ActionListener"
+      ],
+      "branch_ops": 0,
+      "public_members": [
+        "public int temp",
+        "public void actionPerformed(java.awt.event.ActionEvent)"
+      ]
+    },
+    {
+      "name": "cse4392.SeasonSwitch",
+      "kind": "class",
+      "extends": [],
+      "implements": [
+        "java.awt.event.ActionListener"
+      ],
+      "branch_ops": 4,
+      "public_members": [
+        "public cse4392.SeasonSwitch()",
+        "public static void main(java.lang.String[])",
+        "public void actionPerformed(java.awt.event.ActionEvent)",
+        "public void cool()",
+        "public void heat()",
+        "public void off()",
+        "public void timerOff()"
+      ]
+    }
+  ],
+  "original_branch_ops": 13,
+  "subject_branch_ops": 4,
+  "original_switch_ops": 5,
+  "subject_switch_ops": 0
+}

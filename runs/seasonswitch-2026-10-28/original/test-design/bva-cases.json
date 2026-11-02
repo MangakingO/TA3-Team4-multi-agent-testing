@@ -1,0 +1,182 @@
+[
+  {
+    "id": "BVA-01",
+    "technique": "BVA",
+    "method": "timerOff()",
+    "condition": "temp = 69 = coolTemp + 1 (just above)",
+    "input": "cool(); ac off; temp = 69; timerOff()",
+    "expected": "prints \"Cooling started. RmTemp=69\"; ac on",
+    "junit": "SeasonSwitch s = new SeasonSwitch();\ns.cool();\ns.ac.off();\ns.room.temp = 69;\nString out = TestSupport.captureOut(s::timerOff);\nassertEquals(List.of(\"Cooling started. RmTemp=69\"), TestSupport.lines(out));\nassertTrue(s.ac.isOn);"
+  },
+  {
+    "id": "BVA-02",
+    "technique": "BVA",
+    "method": "timerOff()",
+    "condition": "temp = 68 = coolTemp (at the boundary)",
+    "input": "cool(); temp = 68; timerOff()",
+    "expected": "prints \"Cooling stopped. RmTemp=68\"; ac off",
+    "junit": "SeasonSwitch s = new SeasonSwitch();\ns.cool();\ns.room.temp = 68;\nString out = TestSupport.captureOut(s::timerOff);\nassertEquals(List.of(\"Cooling stopped. RmTemp=68\"), TestSupport.lines(out));\nassertFalse(s.ac.isOn);"
+  },
+  {
+    "id": "BVA-03",
+    "technique": "BVA",
+    "method": "timerOff()",
+    "condition": "temp = 67 = coolTemp - 1 (just below)",
+    "input": "cool(); temp = 67; timerOff()",
+    "expected": "prints \"Cooling stopped. RmTemp=67\"; ac off",
+    "junit": "SeasonSwitch s = new SeasonSwitch();\ns.cool();\ns.room.temp = 67;\nString out = TestSupport.captureOut(s::timerOff);\nassertEquals(List.of(\"Cooling stopped. RmTemp=67\"), TestSupport.lines(out));\nassertFalse(s.ac.isOn);"
+  },
+  {
+    "id": "BVA-04",
+    "technique": "BVA",
+    "method": "timerOff()",
+    "condition": "temp = 76 = heatTemp - 1 (just below)",
+    "input": "heat(); heater off; temp = 76; timerOff()",
+    "expected": "prints \"Heating started. RmTemp=76\"; heater on",
+    "junit": "SeasonSwitch s = new SeasonSwitch();\ns.heat();\ns.heater.off();\ns.room.temp = 76;\nString out = TestSupport.captureOut(s::timerOff);\nassertEquals(List.of(\"Heating started. RmTemp=76\"), TestSupport.lines(out));\nassertTrue(s.heater.isOn);"
+  },
+  {
+    "id": "BVA-05",
+    "technique": "BVA",
+    "method": "timerOff()",
+    "condition": "temp = 77 = heatTemp (at the boundary)",
+    "input": "heat(); temp = 77; timerOff()",
+    "expected": "prints \"Heating stopped. RmTemp=77\"; heater off",
+    "junit": "SeasonSwitch s = new SeasonSwitch();\ns.heat();\ns.room.temp = 77;\nString out = TestSupport.captureOut(s::timerOff);\nassertEquals(List.of(\"Heating stopped. RmTemp=77\"), TestSupport.lines(out));\nassertFalse(s.heater.isOn);"
+  },
+  {
+    "id": "BVA-06",
+    "technique": "BVA",
+    "method": "timerOff()",
+    "condition": "temp = 78 = heatTemp + 1 (just above)",
+    "input": "heat(); temp = 78; timerOff()",
+    "expected": "prints \"Heating stopped. RmTemp=78\"; heater off",
+    "junit": "SeasonSwitch s = new SeasonSwitch();\ns.heat();\ns.room.temp = 78;\nString out = TestSupport.captureOut(s::timerOff);\nassertEquals(List.of(\"Heating stopped. RmTemp=78\"), TestSupport.lines(out));\nassertFalse(s.heater.isOn);"
+  },
+  {
+    "id": "BVA-07",
+    "technique": "BVA",
+    "method": "Room.actionPerformed(ActionEvent), actionPerformed(ActionEvent)",
+    "condition": "1 room event = n-1 (n = 2 events reach coolTemp)",
+    "input": "cool(); 1 room event(s); control event",
+    "expected": "room at 69; prints \"Cooling started. RmTemp=69\"; ac stays on",
+    "junit": "SeasonSwitch s = new SeasonSwitch();\ns.cool();\ns.room.actionPerformed(null);\nassertEquals(69, s.room.temp);\nString out = TestSupport.captureOut(() -> s.actionPerformed(null));\nassertEquals(List.of(\"Cooling started. RmTemp=69\"), TestSupport.lines(out));\nassertTrue(s.ac.isOn);"
+  },
+  {
+    "id": "BVA-08",
+    "technique": "BVA",
+    "method": "Room.actionPerformed(ActionEvent), actionPerformed(ActionEvent)",
+    "condition": "2 room events = n (reaches coolTemp)",
+    "input": "cool(); 2 room event(s); control event",
+    "expected": "room at 68; prints \"Cooling stopped. RmTemp=68\"; ac off",
+    "junit": "SeasonSwitch s = new SeasonSwitch();\ns.cool();\ns.room.actionPerformed(null);\ns.room.actionPerformed(null);\nassertEquals(68, s.room.temp);\nString out = TestSupport.captureOut(() -> s.actionPerformed(null));\nassertEquals(List.of(\"Cooling stopped. RmTemp=68\"), TestSupport.lines(out));\nassertFalse(s.ac.isOn);"
+  },
+  {
+    "id": "BVA-09",
+    "technique": "BVA",
+    "method": "timerOff(), Room.actionPerformed(ActionEvent)",
+    "condition": "AC stopped at coolTemp; 1 room event moves just above it",
+    "input": "cool(); temp = 68; timerOff(); room event; timerOff()",
+    "expected": "ac stops at 68; room moves to 69; prints \"Cooling started. RmTemp=69\"; ac on again",
+    "junit": "SeasonSwitch s = new SeasonSwitch();\ns.cool();\ns.room.temp = 68;\ns.timerOff();\nassertFalse(s.ac.isOn);\ns.room.actionPerformed(null);\nassertEquals(69, s.room.temp);\nString out = TestSupport.captureOut(s::timerOff);\nassertEquals(List.of(\"Cooling started. RmTemp=69\"), TestSupport.lines(out));\nassertTrue(s.ac.isOn);"
+  },
+  {
+    "id": "BVA-10",
+    "technique": "BVA",
+    "method": "Room.actionPerformed(ActionEvent), actionPerformed(ActionEvent)",
+    "condition": "6 room events = n-1 (n = 7 events reach heatTemp)",
+    "input": "heat(); 6 room event(s); control event",
+    "expected": "room at 76; prints \"Heating started. RmTemp=76\"; heater stays on",
+    "junit": "SeasonSwitch s = new SeasonSwitch();\ns.heat();\nfor (int i = 0; i < 6; i++) {\n    s.room.actionPerformed(null);\n}\nassertEquals(76, s.room.temp);\nString out = TestSupport.captureOut(() -> s.actionPerformed(null));\nassertEquals(List.of(\"Heating started. RmTemp=76\"), TestSupport.lines(out));\nassertTrue(s.heater.isOn);"
+  },
+  {
+    "id": "BVA-11",
+    "technique": "BVA",
+    "method": "Room.actionPerformed(ActionEvent), actionPerformed(ActionEvent)",
+    "condition": "7 room events = n (reaches heatTemp)",
+    "input": "heat(); 7 room event(s); control event",
+    "expected": "room at 77; prints \"Heating stopped. RmTemp=77\"; heater off",
+    "junit": "SeasonSwitch s = new SeasonSwitch();\ns.heat();\nfor (int i = 0; i < 7; i++) {\n    s.room.actionPerformed(null);\n}\nassertEquals(77, s.room.temp);\nString out = TestSupport.captureOut(() -> s.actionPerformed(null));\nassertEquals(List.of(\"Heating stopped. RmTemp=77\"), TestSupport.lines(out));\nassertFalse(s.heater.isOn);"
+  },
+  {
+    "id": "BVA-12",
+    "technique": "BVA",
+    "method": "timerOff(), Room.actionPerformed(ActionEvent)",
+    "condition": "heater stopped at heatTemp; 1 room event moves just below it",
+    "input": "heat(); temp = 77; timerOff(); room event; timerOff()",
+    "expected": "heater stops at 77; room moves to 76; prints \"Heating started. RmTemp=76\"; heater on again",
+    "junit": "SeasonSwitch s = new SeasonSwitch();\ns.heat();\ns.room.temp = 77;\ns.timerOff();\nassertFalse(s.heater.isOn);\ns.room.actionPerformed(null);\nassertEquals(76, s.room.temp);\nString out = TestSupport.captureOut(s::timerOff);\nassertEquals(List.of(\"Heating started. RmTemp=76\"), TestSupport.lines(out));\nassertTrue(s.heater.isOn);"
+  },
+  {
+    "id": "BVA-13",
+    "technique": "BVA",
+    "method": "cool()",
+    "condition": "state = -1 = OFF - 1 (just below the valid range)",
+    "input": "state = -1; cool()",
+    "expected": "nothing printed; AC off; timer not started",
+    "junit": "SeasonSwitch s = new SeasonSwitch();\nSeasonSwitch.state = -1;\nString out = TestSupport.captureOut(s::cool);\nassertEquals(\"\", out);\nassertFalse(s.ac.isOn);\nassertFalse(s.timer.isRunning());"
+  },
+  {
+    "id": "BVA-14",
+    "technique": "BVA",
+    "method": "heat()",
+    "condition": "state = 3 = HEAT + 1 (just above the valid range)",
+    "input": "state = 3; heat()",
+    "expected": "nothing printed; heater off; timer not started",
+    "junit": "SeasonSwitch s = new SeasonSwitch();\nSeasonSwitch.state = 3;\nString out = TestSupport.captureOut(s::heat);\nassertEquals(\"\", out);\nassertFalse(s.heater.isOn);\nassertFalse(s.timer.isRunning());"
+  },
+  {
+    "id": "BVA-15",
+    "technique": "BVA",
+    "method": "main(String[])",
+    "condition": "0 arguments (args.length == 0 boundary)",
+    "input": "java SeasonSwitch",
+    "expected": "prints the prompt, then \"Cooling started. RmTemp=70\"; keeps running",
+    "junit": "TestSupport.MainRun r = TestSupport.runMain(SeasonSwitch.class, 3000);\nassertTrue(r.stillRunning);\nList<String> lines = r.lines();\nassertEquals(\"Enter off, cool or heat to run. Press Ctrl-c to exit.\", lines.get(0));\nassertEquals(\"Cooling started. RmTemp=70\", lines.get(1));"
+  },
+  {
+    "id": "BVA-16",
+    "technique": "BVA",
+    "method": "main(String[])",
+    "condition": "2 arguments (one more than used)",
+    "input": "java SeasonSwitch heat extra",
+    "expected": "the extra argument is ignored: prints \"Heating started. RmTemp=70\"; keeps running",
+    "junit": "TestSupport.MainRun r = TestSupport.runMain(SeasonSwitch.class, 3000, \"heat\", \"extra\");\nassertTrue(r.stillRunning);\nassertEquals(\"Heating started. RmTemp=70\", r.lines().get(1));"
+  },
+  {
+    "id": "BVA-17",
+    "technique": "BVA",
+    "method": "main(String[])",
+    "condition": "empty command (length 0)",
+    "input": "java SeasonSwitch \"\"",
+    "expected": "prints the prompt and \"Unknown command. System exits.\"; exits with code 1",
+    "junit": "TestSupport.MainRun r = TestSupport.runMain(SeasonSwitch.class, 3000, \"\");\nassertFalse(r.stillRunning);\nassertEquals(1, r.exitCode);\nassertEquals(\"Unknown command. System exits.\", r.lines().get(1));"
+  },
+  {
+    "id": "BVA-18",
+    "technique": "BVA",
+    "method": "main(String[])",
+    "condition": "\"OFF\": differs from \"off\" only by case",
+    "input": "java SeasonSwitch \"OFF\"",
+    "expected": "prints the prompt and \"Unknown command. System exits.\"; exits with code 1",
+    "junit": "TestSupport.MainRun r = TestSupport.runMain(SeasonSwitch.class, 3000, \"OFF\");\nassertFalse(r.stillRunning);\nassertEquals(1, r.exitCode);\nassertEquals(\"Unknown command. System exits.\", r.lines().get(1));"
+  },
+  {
+    "id": "BVA-19",
+    "technique": "BVA",
+    "method": "main(String[])",
+    "condition": "\"coo\": one character shorter than \"cool\"",
+    "input": "java SeasonSwitch \"coo\"",
+    "expected": "prints the prompt and \"Unknown command. System exits.\"; exits with code 1",
+    "junit": "TestSupport.MainRun r = TestSupport.runMain(SeasonSwitch.class, 3000, \"coo\");\nassertFalse(r.stillRunning);\nassertEquals(1, r.exitCode);\nassertEquals(\"Unknown command. System exits.\", r.lines().get(1));"
+  },
+  {
+    "id": "BVA-20",
+    "technique": "BVA",
+    "method": "main(String[])",
+    "condition": "\"heats\": one character longer than \"heat\"",
+    "input": "java SeasonSwitch \"heats\"",
+    "expected": "prints the prompt and \"Unknown command. System exits.\"; exits with code 1",
+    "junit": "TestSupport.MainRun r = TestSupport.runMain(SeasonSwitch.class, 3000, \"heats\");\nassertFalse(r.stillRunning);\nassertEquals(1, r.exitCode);\nassertEquals(\"Unknown command. System exits.\", r.lines().get(1));"
+  }
+]
