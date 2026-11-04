@@ -1,0 +1,58 @@
+{
+  "exit_code": 1,
+  "seconds": 4.1,
+  "maven_log": "/home/claude/ta3-multi-agent-testing/runs/seasonswitch-2026-11-02/original/test-results/run-02/maven.log",
+  "tests": [],
+  "compile_errors": [
+    {
+      "file": "SeasonSwitchTest.java",
+      "scope": "test",
+      "line": 77,
+      "message": "non-static variable state cannot be referenced from a static context",
+      "test_id": "EP-05"
+    },
+    {
+      "file": "SeasonSwitchTest.java",
+      "scope": "test",
+      "line": 124,
+      "message": "non-static variable state cannot be referenced from a static context",
+      "test_id": "EP-09"
+    },
+    {
+      "file": "SeasonSwitchTest.java",
+      "scope": "test",
+      "line": 170,
+      "message": "non-static variable state cannot be referenced from a static context",
+      "test_id": "EP-13"
+    },
+    {
+      "file": "SeasonSwitchTest.java",
+      "scope": "test",
+      "line": 238,
+      "message": "non-static variable state cannot be referenced from a static context",
+      "test_id": "EP-19"
+    },
+    {
+      "file": "SeasonSwitchTest.java",
+      "scope": "test",
+      "line": 308,
+      "message": "non-static variable state cannot be referenced from a static context",
+      "test_id": "EP-26"
+    },
+    {
+      "file": "SeasonSwitchTest.java",
+      "scope": "test",
+      "line": 516,
+      "message": "non-static variable state cannot be referenced from a static context",
+      "test_id": "BVA-13"
+    },
+    {
+      "file": "SeasonSwitchTest.java",
+      "scope": "test",
+      "line": 527,
+      "message": "non-static variable state cannot be referenced from a static context",
+      "test_id": "BVA-14"
+    }
+  ],
+  "status": "compile_error"
+}

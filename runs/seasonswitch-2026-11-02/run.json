@@ -1,0 +1,20 @@
+{
+  "run_id": "seasonswitch-2026-11-02",
+  "sut": "/home/claude/ta3-multi-agent-testing/season-switch/src/main/java/cse4392/SeasonSwitch.java",
+  "started": "2026-11-02T20:48:53",
+  "llm": "manual: Claude Opus 5.5 (replies relayed by hand)",
+  "refactor_prompt": "/home/claude/ta3-multi-agent-testing/prompts/refactor_state_pattern.md",
+  "maven_args": [
+    "-s",
+    "/tmp/claude-0/-home-claude/8536a58e-64f3-56fd-9bc0-cc23c595429b/scratchpad/toolchain/settings.xml"
+  ],
+  "pom_template": "/tmp/claude-0/-home-claude/8536a58e-64f3-56fd-9bc0-cc23c595429b/scratchpad/toolchain/pom-sandbox.xml",
+  "agent_system": "Java 21, LangGraph4j, LangChain4j",
+  "observe": [
+    "",
+    "cool",
+    "heat",
+    "off",
+    "warm"
+  ]
+}

@@ -34,12 +34,12 @@
 <text x="30.0" y="789.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">Answers: review files or</text>
 <text x="30.0" y="808.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">the console</text>
 <rect x="340" y="16" width="1150" height="740" rx="16" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.6"/>
-<text x="356.0" y="46.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start" fill="#0F172A">Agent system  (Python 3, LangGraph, LangChain)</text>
+<text x="356.0" y="46.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start" fill="#0F172A">Agent system  (Java 17, LangGraph4j, LangChain4j)</text>
 <rect x="368" y="62" width="1102" height="128" rx="12" fill="#E2E8F0" stroke="#475569" stroke-width="1.5"/>
-<text x="382.0" y="88.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start" fill="#0F172A">Orchestrator: LangGraph StateGraph  (graph.py)</text>
+<text x="382.0" y="88.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start" fill="#0F172A">Orchestrator: LangGraph4j StateGraph  (graph/Workflow.java)</text>
 <text x="382.0" y="110.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">16 nodes for the 12 steps; conditional edges route the loops (repair, coverage, review)</text>
-<text x="382.0" y="129.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">fork / join: the EP and BVA agents run in parallel; interrupts pause the graph for people</text>
-<text x="382.0" y="149.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">shared AgentState; every step saved in SQLite checkpoints, so a run can stop and resume</text>
+<text x="382.0" y="129.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">fork / join: the EP and BVA agents run in parallel on two threads; interrupts pause the graph for people</text>
+<text x="382.0" y="149.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">shared RunState; every step saved in SQLite checkpoints (SQLiteSaver), so a run can stop and resume</text>
 <rect x="368" y="62" width="1102" height="128" rx="12" fill="none" stroke="#0F172A" stroke-width="2.2"/>
 <rect x="368" y="214" width="532" height="526" rx="16" fill="#FAF5FF" stroke="#C4B5FD" stroke-width="1.6"/>
 <text x="384.0" y="244.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0F172A">LLM agents  (agents/, prompts/)</text>
@@ -82,7 +82,7 @@
 <text x="1222.0" y="306.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">joins EP + BVA, no duplicates</text>
 <text x="1222.0" y="325.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">steps 2 and 3</text>
 <rect x="946" y="376" width="246" height="100" rx="12" fill="#E2E8F0" stroke="#475569" stroke-width="1.5"/>
-<text x="960.0" y="402.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0F172A">JUnit renderer</text>
+<text x="960.0" y="402.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0F172A">JUnit writer</text>
 <text x="960.0" y="424.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">test class + TestSupport.java</text>
 <text x="960.0" y="443.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">before every test run</text>
 <rect x="1208" y="376" width="246" height="100" rx="12" fill="#E2E8F0" stroke="#475569" stroke-width="1.5"/>
@@ -149,7 +149,7 @@
 <polyline points="1490.0,120.0 1514.0,120.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
 <polygon points="1514,120 1504,115 1504,125" fill="#334155"/>
 <rect x="368" y="800" width="532" height="104" rx="12" fill="white" stroke="#7C3AED" stroke-width="2.2"/>
-<text x="382.0" y="826.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0F172A">Language model  (LangChain)</text>
+<text x="382.0" y="826.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0F172A">Language model  (LangChain4j)</text>
 <text x="382.0" y="848.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">Ollama: qwen2.5-coder:7b on the team's machine (default)</text>
 <text x="382.0" y="867.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">or manual: a person relays a web LLM (used for this run)</text>
 <rect x="930" y="800" width="540" height="104" rx="12" fill="white" stroke="#475569" stroke-width="2.2"/>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sandbox-only build file: same layout and outputs as season-switch/pom.xml, but uses the
+     Ubuntu-packaged plugins (offline) and the JaCoCo agent + report API directly,
+     because Maven Central is not reachable from the build sandbox. -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>edu.uta.cse4392.team4</groupId>
+  <artifactId>season-switch</artifactId>
+  <version>1.0</version>
+  <packaging>jar</packaging>
+  <properties>
+    <maven.compiler.release>17</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <exec.mainClass>cse4392.SeasonSwitch</exec.mainClass>
+    <jacoco.toolchain>/tmp/claude-0/-home-claude/8536a58e-64f3-56fd-9bc0-cc23c595429b/scratchpad/toolchain</jacoco.toolchain>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>5.10.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin><artifactId>maven-clean-plugin</artifactId><version>3.2.0</version></plugin>
+      <plugin><artifactId>maven-resources-plugin</artifactId><version>3.3.0</version></plugin>
+      <plugin><artifactId>maven-compiler-plugin</artifactId><version>3.10.1</version></plugin>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.22.3</version>
+        <configuration>
+          <argLine>-javaagent:${jacoco.toolchain}/jacocoagent.jar=destfile=${project.build.directory}/jacoco.exec</argLine>
+        </configuration>
+      </plugin>
+      <plugin><artifactId>maven-jar-plugin</artifactId><version>3.3.0</version></plugin>
+      <plugin><artifactId>maven-install-plugin</artifactId><version>3.1.1</version></plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.1.0</version>
+        <configuration>
+          <mainClass>${exec.mainClass}</mainClass>
+        </configuration>
+        <executions>
+          <execution>
+            <id>jacoco-report</id>
+            <phase>test</phase>
+            <goals><goal>exec</goal></goals>
+            <configuration>
+              <executable>java</executable>
+              <arguments>
+                <argument>-cp</argument>
+                <argument>${jacoco.toolchain}/jacoco-report.jar:/usr/share/java/org.jacoco.core.jar:/usr/share/java/org.jacoco.report.jar:/usr/share/java/asm.jar:/usr/share/java/asm-commons.jar:/usr/share/java/asm-tree.jar</argument>
+                <argument>JacocoReport</argument>
+                <argument>${project.build.directory}/jacoco.exec</argument>
+                <argument>${project.build.outputDirectory}</argument>
+                <argument>${project.basedir}/src/main/java</argument>
+                <argument>${project.build.directory}/site/jacoco</argument>
+                <argument>${project.artifactId}</argument>
+              </arguments>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

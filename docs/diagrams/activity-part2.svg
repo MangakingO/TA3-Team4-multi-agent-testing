@@ -116,7 +116,7 @@
 <rect x="24" y="777" width="26" height="18" rx="5" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.4"/>
 <text x="60.0" y="791.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start" fill="#0F172A">LLM agent (Ollama)</text>
 <rect x="232.765625" y="777" width="26" height="18" rx="5" fill="#E2E8F0" stroke="#475569" stroke-width="1.4"/>
-<text x="268.8" y="791.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start" fill="#0F172A">Tool (Maven, JaCoCo, javap, Python)</text>
-<rect x="565.796875" y="777" width="26" height="18" rx="5" fill="#FEF3C7" stroke="#D97706" stroke-width="1.4"/>
-<text x="601.8" y="791.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start" fill="#0F172A">Person (human in the loop)</text>
+<text x="268.8" y="791.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start" fill="#0F172A">Tool (Maven, JaCoCo, javap, Java code)</text>
+<rect x="589.015625" y="777" width="26" height="18" rx="5" fill="#FEF3C7" stroke="#D97706" stroke-width="1.4"/>
+<text x="625.0" y="791.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start" fill="#0F172A">Person (human in the loop)</text>
 </svg>

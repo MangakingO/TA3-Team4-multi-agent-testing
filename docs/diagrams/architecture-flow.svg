@@ -19,11 +19,11 @@
 <text x="38.0" y="670.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">.env settings</text>
 <text x="38.0" y="690.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">prompts/*.md (final: P3)</text>
 <rect x="440" y="110" width="60" height="620" rx="10" fill="#E2E8F0" stroke="#475569" stroke-width="1.6"/>
-<text x="466.0" y="420.0" transform="rotate(-90 466.0 420.0)" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#0F172A">Command line  (cli.py)</text>
-<text x="488.0" y="420.0" transform="rotate(-90 488.0 420.0)" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#1E293B">python -m agent_system   run · resume · status · report · lab</text>
+<text x="466.0" y="420.0" transform="rotate(-90 466.0 420.0)" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#0F172A">Command line  (Main.java)</text>
+<text x="488.0" y="420.0" transform="rotate(-90 488.0 420.0)" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#1E293B">java -jar ta3-agents.jar   run · resume · status · report · lab</text>
 <rect x="690" y="110" width="80" height="620" rx="10" fill="#E2E8F0" stroke="#0F172A" stroke-width="2.2"/>
-<text x="726.0" y="420.0" transform="rotate(-90 726.0 420.0)" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#0F172A">LangGraph orchestrator  (graph.py)</text>
-<text x="748.0" y="420.0" transform="rotate(-90 748.0 420.0)" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#1E293B">StateGraph · 16 nodes · conditional edges · interrupt() for people</text>
+<text x="726.0" y="420.0" transform="rotate(-90 726.0 420.0)" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#0F172A">LangGraph4j orchestrator  (Workflow.java)</text>
+<text x="748.0" y="420.0" transform="rotate(-90 748.0 420.0)" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#1E293B">StateGraph · 16 nodes · parallel branch · conditional edges · interrupts for people</text>
 <circle cx="1000" cy="270" r="112" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
 <text x="1000.0" y="233.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#0F172A">LLM agents</text>
 <text x="1000.0" y="259.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#1E293B">EP, BVA, reviser,</text>
@@ -33,15 +33,15 @@
 <circle cx="1000" cy="560" r="112" fill="#E2E8F0" stroke="#475569" stroke-width="2"/>
 <text x="1000.0" y="513.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#0F172A">Tools</text>
 <text x="1000.0" y="539.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#1E293B">setup, curator,</text>
-<text x="1000.0" y="558.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#1E293B">JUnit renderer,</text>
+<text x="1000.0" y="558.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#1E293B">JUnit writer,</text>
 <text x="1000.0" y="577.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#1E293B">test runner, JaCoCo,</text>
 <text x="1000.0" y="596.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#1E293B">pattern checker,</text>
 <text x="1000.0" y="615.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#1E293B">finalize</text>
-<rect x="1270" y="213" width="260" height="114" rx="12" fill="white" stroke="#7C3AED" stroke-width="2.2"/>
-<text x="1284.0" y="239.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0F172A">LangChain ChatOllama</text>
-<text x="1284.0" y="261.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">llm.py: one call per agent</text>
-<text x="1284.0" y="280.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">format = the JSON Schema</text>
-<text x="1284.0" y="300.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">reply validated (Pydantic)</text>
+<rect x="1246" y="213" width="304" height="114" rx="12" fill="white" stroke="#7C3AED" stroke-width="2.2"/>
+<text x="1260.0" y="239.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0F172A">LangChain4j OllamaChatModel</text>
+<text x="1260.0" y="261.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">Llm.java: one call per agent</text>
+<text x="1260.0" y="280.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">format = the JSON Schema</text>
+<text x="1260.0" y="300.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">reply → Java record (Jackson)</text>
 <rect x="1650" y="223" width="230" height="95" rx="12" fill="white" stroke="#7C3AED" stroke-width="2.2"/>
 <text x="1664.0" y="249.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0F172A">Ollama server</text>
 <text x="1664.0" y="271.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">qwen2.5-coder:7b</text>
@@ -51,13 +51,13 @@
 <text x="1765.0" y="395.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400" text-anchor="middle" fill="#334155" font-style="italic">prompt goes to a file and a</text>
 <text x="1765.0" y="414.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400" text-anchor="middle" fill="#334155" font-style="italic">person pastes a web LLM's</text>
 <text x="1765.0" y="433.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400" text-anchor="middle" fill="#334155" font-style="italic">reply (used for this run)</text>
-<rect x="1270" y="484" width="260" height="153" rx="12" fill="white" stroke="#475569" stroke-width="2.2"/>
-<text x="1284.0" y="510.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0F172A">JDK + Maven</text>
-<text x="1284.0" y="532.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">mvn test: javac, JUnit 5</text>
-<text x="1284.0" y="551.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">(Surefire), JaCoCo agent</text>
-<text x="1284.0" y="571.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">and report</text>
-<text x="1284.0" y="590.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">javap -c (pattern checks)</text>
-<text x="1284.0" y="610.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">java: observe main()</text>
+<rect x="1246" y="484" width="304" height="153" rx="12" fill="white" stroke="#475569" stroke-width="2.2"/>
+<text x="1260.0" y="510.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" fill="#0F172A">JDK + Maven</text>
+<text x="1260.0" y="532.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">mvn test: javac, JUnit 5</text>
+<text x="1260.0" y="551.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">(Surefire), JaCoCo agent</text>
+<text x="1260.0" y="571.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">and report</text>
+<text x="1260.0" y="590.5" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">javap -c (pattern checks)</text>
+<text x="1260.0" y="610.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" text-anchor="start" fill="#1E293B">java: observe main()</text>
 <path d="M1650,486 L1650,686 A115.0,16 0 0 0 1880,686 L1880,486" fill="#FFFFFF" stroke="#475569" stroke-width="1.8"/>
 <ellipse cx="1765.0" cy="486" rx="115.0" ry="16" fill="#FFFFFF" stroke="#475569" stroke-width="1.8"/>
 <text x="1765.0" y="520.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle" fill="#0F172A">runs/&lt;run-id&gt;/</text>
@@ -71,7 +71,7 @@
 <path d="M620.0,816 L620.0,924 A110.0,16 0 0 0 840.0,924 L840.0,816" fill="#F1F5F9" stroke="#475569" stroke-width="1.8"/>
 <ellipse cx="730.0" cy="816" rx="110.0" ry="16" fill="#F1F5F9" stroke="#475569" stroke-width="1.8"/>
 <text x="730.0" y="850.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle" fill="#0F172A">checkpoints.sqlite</text>
-<text x="730.0" y="874.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#1E293B">SqliteSaver: AgentState</text>
+<text x="730.0" y="874.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#1E293B">SQLiteSaver: RunState</text>
 <text x="730.0" y="893.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#1E293B">after every step</text>
 <polyline points="264.0,203.0 440.0,203.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
 <polygon points="440,203.0 430,198.0 430,208.0" fill="#334155"/>
@@ -93,46 +93,46 @@
 <text x="595.0" y="195.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">stream(input)</text>
 <polyline points="690.0,237.0 500.0,237.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
 <polygon points="500,237.0 510,232.0 510,242.0" fill="#334155"/>
-<text x="595.0" y="257.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">updates</text>
+<text x="595.0" y="257.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">node outputs</text>
 <polyline points="500.0,423.0 690.0,423.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
 <polygon points="690,423.0 680,418.0 680,428.0" fill="#334155"/>
 <text x="595.0" y="415.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">resume(answer)</text>
 <polyline points="690.0,457.0 500.0,457.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
 <polygon points="500,457.0 510,452.0 510,462.0" fill="#334155"/>
-<text x="595.0" y="477.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">interrupt()</text>
+<text x="595.0" y="477.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">interrupt</text>
 <polyline points="770.0,253.0 888.0,253.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
 <polygon points="888,253.0 878,248.0 878,258.0" fill="#334155"/>
-<text x="829.0" y="245.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">AgentState</text>
+<text x="829.0" y="245.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">RunState</text>
 <polyline points="888.0,287.0 770.0,287.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
 <polygon points="770,287.0 780,282.0 780,292.0" fill="#334155"/>
 <text x="829.0" y="307.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">update</text>
 <polyline points="770.0,543.0 888.0,543.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
 <polygon points="888,543.0 878,538.0 878,548.0" fill="#334155"/>
-<text x="829.0" y="535.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">AgentState</text>
+<text x="829.0" y="535.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">RunState</text>
 <polyline points="888.0,577.0 770.0,577.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
 <polygon points="770,577.0 780,572.0 780,582.0" fill="#334155"/>
 <text x="829.0" y="597.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">update</text>
-<polyline points="1112.0,253.0 1270.0,253.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
-<polygon points="1270,253.0 1260,248.0 1260,258.0" fill="#334155"/>
-<text x="1191.0" y="245.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">prompt + schema</text>
-<polyline points="1270.0,287.0 1112.0,287.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="1112.0,253.0 1246.0,253.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="1246,253.0 1236,248.0 1236,258.0" fill="#334155"/>
+<text x="1179.0" y="245.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">prompt + schema</text>
+<polyline points="1246.0,287.0 1112.0,287.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
 <polygon points="1112,287.0 1122,282.0 1122,292.0" fill="#334155"/>
-<text x="1191.0" y="307.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">JSON / Java</text>
-<polyline points="1530.0,253.0 1650.0,253.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="1179.0" y="307.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">JSON / Java</text>
+<polyline points="1550.0,253.0 1650.0,253.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
 <polygon points="1650,253.0 1640,248.0 1640,258.0" fill="#334155"/>
-<text x="1590.0" y="245.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">/api/chat</text>
-<polyline points="1650.0,287.0 1530.0,287.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
-<polygon points="1530,287.0 1540,282.0 1540,292.0" fill="#334155"/>
-<text x="1590.0" y="307.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">reply</text>
-<polyline points="1112.0,543.0 1270.0,543.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
-<polygon points="1270,543.0 1260,538.0 1260,548.0" fill="#334155"/>
-<text x="1191.0" y="535.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">mvn, javap, java</text>
-<polyline points="1270.0,577.0 1112.0,577.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="1600.0" y="245.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">/api/chat</text>
+<polyline points="1650.0,287.0 1550.0,287.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="1550,287.0 1560,282.0 1560,292.0" fill="#334155"/>
+<text x="1600.0" y="307.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">reply</text>
+<polyline points="1112.0,543.0 1246.0,543.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="1246,543.0 1236,538.0 1236,548.0" fill="#334155"/>
+<text x="1179.0" y="535.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">mvn, javap, java</text>
+<polyline points="1246.0,577.0 1112.0,577.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
 <polygon points="1112,577.0 1122,572.0 1122,582.0" fill="#334155"/>
-<text x="1191.0" y="597.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">XML reports</text>
-<polyline points="1530.0,560.0 1650.0,560.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="1179.0" y="597.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">XML reports</text>
+<polyline points="1550.0,560.0 1650.0,560.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
 <polygon points="1650,560 1640,555 1640,565" fill="#334155"/>
-<text x="1590.0" y="550.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">target/</text>
+<text x="1600.0" y="550.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">target/</text>
 <polyline points="1000.0,672.0 1000.0,770.0 1765.0,770.0 1765.0,702.0" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
 <polygon points="1765.0,702 1760.0,712 1770.0,712" fill="#334155"/>
 <text x="1382.5" y="760.0" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">writes test cases, results, coverage, changes.md, final/</text>

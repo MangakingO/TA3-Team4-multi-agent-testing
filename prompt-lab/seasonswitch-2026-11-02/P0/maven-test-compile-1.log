@@ -1,0 +1,363 @@
+$ /opt/maven/bin/mvn -B -s /tmp/claude-0/-home-claude/8536a58e-64f3-56fd-9bc0-cc23c595429b/scratchpad/toolchain/settings.xml test-compile
+# exit code 1, 4.1s
+
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< edu.uta.cse4392.team4:season-switch >-----------------
+[INFO] Building season-switch 1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.0:resources (default-resources) @ season-switch ---
+[INFO] skip non existing resourceDirectory /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ season-switch ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/target/classes
+[INFO] 
+[INFO] --- resources:3.3.0:testResources (default-testResources) @ season-switch ---
+[INFO] skip non existing resourceDirectory /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ season-switch ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/target/test-classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[29,22] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[29,25] cannot find symbol
+  symbol:   variable isOn
+  location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[30,22] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[30,29] cannot find symbol
+  symbol:   variable isOn
+  location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[31,22] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[32,22] room has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[32,27] timer has private access in cse4392.SeasonSwitch.Room
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[33,27] room has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[33,32] temp has private access in cse4392.SeasonSwitch.Room
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[34,27] coolTemp has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[35,27] heatTemp has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[44,21] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[44,24] cannot find symbol
+  symbol:   variable isOn
+  location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[45,22] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[45,29] cannot find symbol
+  symbol:   variable isOn
+  location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[46,21] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[56,21] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[56,24] cannot find symbol
+  symbol:   variable isOn
+  location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[57,22] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[57,29] cannot find symbol
+  symbol:   variable isOn
+  location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[58,21] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[68,21] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[68,24] cannot find symbol
+  symbol:   variable isOn
+  location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[69,22] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[69,29] cannot find symbol
+  symbol:   variable isOn
+  location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[70,21] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[77,10] state has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[77,19] incompatible types: int cannot be converted to cse4392.SeasonState
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[80,22] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[80,25] cannot find symbol
+  symbol:   variable isOn
+  location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[81,22] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[81,29] cannot find symbol
+  symbol:   variable isOn
+  location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[82,22] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[91,21] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[91,28] cannot find symbol
+  symbol:   variable isOn
+  location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[92,22] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[92,25] cannot find symbol
+  symbol:   variable isOn
+  location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[93,21] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[103,21] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[103,28] cannot find symbol
+  symbol:   variable isOn
+  location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[104,22] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[104,25] cannot find symbol
+  symbol:   variable isOn
+  location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[105,21] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[115,22] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[115,25] cannot find symbol
+  symbol:   variable isOn
+  location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[116,21] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[116,28] cannot find symbol
+  symbol:   variable isOn
+  location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[117,21] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[124,10] state has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[124,19] incompatible types: int cannot be converted to cse4392.SeasonState
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[127,22] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[127,29] cannot find symbol
+  symbol:   variable isOn
+  location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[128,22] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[128,25] cannot find symbol
+  symbol:   variable isOn
+  location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[129,22] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[138,22] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[138,25] cannot find symbol
+  symbol:   variable isOn
+  location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[139,22] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[139,29] cannot find symbol
+  symbol:   variable isOn
+  location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[140,22] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[150,22] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[150,25] cannot find symbol
+  symbol:   variable isOn
+  location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[151,22] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[161,22] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[161,29] cannot find symbol
+  symbol:   variable isOn
+  location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[162,22] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[170,10] state has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[170,19] incompatible types: int cannot be converted to cse4392.SeasonState
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[173,21] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[173,24] cannot find symbol
+  symbol:   variable isOn
+  location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[174,21] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[183,22] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[183,25] cannot find symbol
+  symbol:   variable isOn
+  location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[184,22] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[184,29] cannot find symbol
+  symbol:   variable isOn
+  location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[192,10] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[193,10] room has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[193,15] temp has private access in cse4392.SeasonSwitch.Room
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[196,21] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[196,24] cannot find symbol
+  symbol:   variable isOn
+  location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[204,10] room has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[204,15] temp has private access in cse4392.SeasonSwitch.Room
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[207,22] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[207,25] cannot find symbol
+  symbol:   variable isOn
+  location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[215,10] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[216,10] room has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[216,15] temp has private access in cse4392.SeasonSwitch.Room
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[219,21] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[219,28] cannot find symbol
+  symbol:   variable isOn
+  location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[227,10] room has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[227,15] temp has private access in cse4392.SeasonSwitch.Room
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[230,22] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[230,29] cannot find symbol
+  symbol:   variable isOn
+  location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[238,10] state has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[238,19] incompatible types: int cannot be converted to cse4392.SeasonState
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[239,10] room has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[239,15] temp has private access in cse4392.SeasonSwitch.Room
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[242,21] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[242,24] cannot find symbol
+  symbol:   variable isOn
+  location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[250,10] ac has private access in cse4392.SeasonSwitch
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.275 s
+[INFO] Finished at: 2026-11-04T12:26:56-06:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.10.1:testCompile (default-testCompile) on project season-switch: Compilation failure: Compilation failure: 
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[29,22] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[29,25] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[30,22] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[30,29] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[31,22] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[32,22] room has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[32,27] timer has private access in cse4392.SeasonSwitch.Room
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[33,27] room has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[33,32] temp has private access in cse4392.SeasonSwitch.Room
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[34,27] coolTemp has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[35,27] heatTemp has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[44,21] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[44,24] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[45,22] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[45,29] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[46,21] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[56,21] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[56,24] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[57,22] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[57,29] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[58,21] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[68,21] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[68,24] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[69,22] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[69,29] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[70,21] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[77,10] state has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[77,19] incompatible types: int cannot be converted to cse4392.SeasonState
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[80,22] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[80,25] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[81,22] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[81,29] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[82,22] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[91,21] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[91,28] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[92,22] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[92,25] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[93,21] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[103,21] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[103,28] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[104,22] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[104,25] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[105,21] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[115,22] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[115,25] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[116,21] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[116,28] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[117,21] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[124,10] state has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[124,19] incompatible types: int cannot be converted to cse4392.SeasonState
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[127,22] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[127,29] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[128,22] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[128,25] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[129,22] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[138,22] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[138,25] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[139,22] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[139,29] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[140,22] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[150,22] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[150,25] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[151,22] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[161,22] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[161,29] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[162,22] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[170,10] state has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[170,19] incompatible types: int cannot be converted to cse4392.SeasonState
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[173,21] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[173,24] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[174,21] timer has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[183,22] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[183,25] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[184,22] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[184,29] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[192,10] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[193,10] room has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[193,15] temp has private access in cse4392.SeasonSwitch.Room
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[196,21] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[196,24] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[204,10] room has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[204,15] temp has private access in cse4392.SeasonSwitch.Room
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[207,22] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[207,25] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[215,10] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[216,10] room has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[216,15] temp has private access in cse4392.SeasonSwitch.Room
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[219,21] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[219,28] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[227,10] room has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[227,15] temp has private access in cse4392.SeasonSwitch.Room
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[230,22] heater has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[230,29] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable heater of type cse4392.SeasonSwitch.Heater
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[238,10] state has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[238,19] incompatible types: int cannot be converted to cse4392.SeasonState
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[239,10] room has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[239,15] temp has private access in cse4392.SeasonSwitch.Room
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[242,21] ac has private access in cse4392.SeasonSwitch
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[242,24] cannot find symbol
+[ERROR]   symbol:   variable isOn
+[ERROR]   location: variable ac of type cse4392.SeasonSwitch.AC
+[ERROR] /home/claude/ta3-multi-agent-testing/prompt-lab/seasonswitch-2026-11-02/P0/project/src/test/java/cse4392/SeasonSwitchTest.java:[250,10] ac has private access in cse4392.SeasonSwitch
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=37503 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=

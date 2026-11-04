@@ -1,0 +1,37 @@
+{
+  "run_id": "seasonswitch-2026-11-02",
+  "status": "completed",
+  "coverage": {
+    "original": {
+      "branch": {
+        "covered": 36,
+        "total": 36,
+        "pct": 100.0
+      },
+      "line": {
+        "covered": 94,
+        "total": 98,
+        "pct": 95.92
+      }
+    },
+    "refactored": {
+      "branch": {
+        "covered": 16,
+        "total": 16,
+        "pct": 100.0
+      },
+      "line": {
+        "covered": 112,
+        "total": 116,
+        "pct": 96.55
+      }
+    }
+  },
+  "test_runs": {
+    "original": 3,
+    "refactored": 1
+  },
+  "tests_original": 51,
+  "tests_refactored": 44,
+  "pattern_checks_passed": true
+}

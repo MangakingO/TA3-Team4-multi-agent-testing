@@ -31,38 +31,39 @@ flowchart TB
     finalize["<b>finalize</b><br/>save results, summary.md, final/"]:::tool
     END((( ))):::stop
     START --> setup
-    adapt_tests --> run_tests
-    ask_human -. "stop" .-> finalize
-    ask_human -. "continue" .-> run_tests
-    bva_agent --> curate
-    coverage_gap --> run_tests
-    curate --> review_tests
+    setup --> ep_agent
+    setup --> bva_agent
     ep_agent --> curate
-    measure_coverage -. "coverage limit" .-> ask_human
-    measure_coverage -. "branch coverage < 100%" .-> coverage_gap
-    measure_coverage -. "100%, refactored code" .-> finalize
-    measure_coverage -. "100%, original code" .-> refactor
-    recheck_refactoring --> review_refactoring
-    refactor -. "compile errors: retry" .-> refactor
-    refactor -. "compiles" .-> review_refactoring
-    repair --> run_tests
-    review_refactoring -. "accepted" .-> adapt_tests
-    review_refactoring -. "code edited" .-> recheck_refactoring
-    review_refactoring -. "feedback or edited prompt" .-> refactor
-    review_tests -. "changes requested" .-> revise_tests
-    review_tests -. "accepted" .-> run_tests
+    bva_agent --> curate
+    curate --> review_tests
     revise_tests --> review_tests
-    run_tests -. "repair limit or build error" .-> ask_human
+    repair --> run_tests
+    coverage_gap --> run_tests
+    recheck_refactoring --> review_refactoring
+    adapt_tests --> run_tests
+    finalize --> END
+    review_tests -. "accepted" .-> run_tests
+    review_tests -. "changes requested" .-> revise_tests
     run_tests -. "all pass" .-> measure_coverage
     run_tests -. "failures" .-> repair
-    setup --> bva_agent
-    setup --> ep_agent
-    finalize --> END
+    run_tests -. "repair limit or build error" .-> ask_human
+    measure_coverage -. "100%, original code" .-> refactor
+    measure_coverage -. "100%, refactored code" .-> finalize
+    measure_coverage -. "branch coverage < 100%" .-> coverage_gap
+    measure_coverage -. "coverage limit" .-> ask_human
+    refactor -. "compile errors: retry" .-> refactor
+    refactor -. "compiles" .-> review_refactoring
+    review_refactoring -. "accepted" .-> adapt_tests
+    review_refactoring -. "feedback or edited prompt" .-> refactor
+    review_refactoring -. "code edited" .-> recheck_refactoring
+    ask_human -. "continue" .-> run_tests
+    ask_human -. "stop" .-> finalize
     classDef agent fill:#EDE9FE,stroke:#7C3AED,stroke-width:1.5px,color:#0F172A
-    classDef tool fill:#E2E8F0,stroke:#475569,stroke-width:1.5px,color:#0F172A
     classDef person fill:#FEF3C7,stroke:#D97706,stroke-width:1.5px,color:#0F172A
+    classDef tool fill:#E2E8F0,stroke:#475569,stroke-width:1.5px,color:#0F172A
     classDef start fill:#0F172A,stroke:#0F172A
     classDef stop fill:#0F172A,stroke:#0F172A
     style design fill:#F8FAFC,stroke:#CBD5E1,stroke-width:1.4px,color:#0F172A
     style test fill:#F8FAFC,stroke:#CBD5E1,stroke-width:1.4px,color:#0F172A
     style refactoring fill:#F8FAFC,stroke:#CBD5E1,stroke-width:1.4px,color:#0F172A
+

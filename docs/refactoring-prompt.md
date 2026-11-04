@@ -2,9 +2,9 @@
 
 The assignment asks each team to try variations of a refactoring prompt with a web-based LLM until
 the result is satisfactory, and then use the final prompt in the agent system. We kept every
-version in `agent_system/prompts/refactor_versions/` and scored them with the prompt lab:
+version in `prompts/refactor_versions/` and scored them with the prompt lab:
 
-    python -m agent_system lab <run-id>
+    java -jar target/ta3-agents.jar lab <run-id>
 
 The lab renders each version for the tested SeasonSwitch code and takes the LLM's reply. With
 `LLM_PROVIDER=manual` it writes `prompt.md`; you paste that into the web LLM and save the answer as
@@ -24,7 +24,7 @@ The lab renders each version for the tested SeasonSwitch code and takes the LLM'
 | P2 | Hard constraints: keep the class name, package and exact public interface; no new public members (helpers package-private); no `switch`/`if` chain or `instanceof` on the state; same behaviour; Java 17; keep `main` | The assignment's hint: the existing tests must run unchanged |
 | P3 | The exact public interface from javap, and an output format: a design section with a transition table, then each file in its own ` ```java ` block with a `// File:` line | Gives the agent a parseable reply, and gives the reviewers the design |
 
-## Results (run seasonswitch-2026-10-28; the replies came from Claude Opus 5.5)
+## Results (run seasonswitch-2026-11-02; the replies came from Claude Opus 5.5)
 
 | Version | Compiles | State pattern checks | Tests compile unchanged | Tests pass | Branch coverage |
 |---|---|---|---|---|---|
@@ -43,7 +43,7 @@ The lab renders each version for the tested SeasonSwitch code and takes the LLM'
   refactoring, `state` is a `SeasonState` object and there is no `switch` left, so these tests are
   obsolete. In step 10 the test adapter removed them and logged the reason.
 
-**Final prompt: P3** (`agent_system/prompts/refactor_state_pattern.md`). It scores the same as P2.
+**Final prompt: P3** (`prompts/refactor_state_pattern.md`). It scores the same as P2.
 It adds the exact API and an output format the agent parses reliably, plus a transition table for
 the step-9 review. In the run, the team accepted the refactoring in the first review round.
 

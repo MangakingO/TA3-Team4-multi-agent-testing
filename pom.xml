@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  The TA3 multi-agent system (Java 17+, LangGraph4j, LangChain4j with Ollama).
+
+      mvn package                                   build target/ta3-agents.jar (and run the tests)
+      mvn package -DskipTests                       build without the tests
+      java -jar target/ta3-agents.jar run season-switch/src/main/java/cse4392/SeasonSwitch.java
+
+  The code under test has its own Maven project (season-switch/pom.xml); the agents copy that pom.xml into every
+  project they create to run JUnit and JaCoCo.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>edu.uta.cse4392.team4</groupId>
+  <artifactId>ta3-agents</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+  <name>TA3 multi-agent testing and refactoring system</name>
+
+  <properties>
+    <maven.compiler.release>17</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <langgraph4j.version>1.9.7</langgraph4j.version>
+    <langchain4j.version>1.22.0</langchain4j.version>
+    <junit.version>5.14.4</junit.version>
+  </properties>
+
+  <dependencies>
+    <!-- The orchestrator: StateGraph, parallel branches, conditional edges, checkpoints, interrupts -->
+    <dependency>
+      <groupId>org.bsc.langgraph4j</groupId>
+      <artifactId>langgraph4j-core</artifactId>
+      <version>${langgraph4j.version}</version>
+    </dependency>
+    <!-- Checkpoints in runs/<run>/checkpoints.sqlite, so a run can pause for people and resume later -->
+    <dependency>
+      <groupId>org.bsc.langgraph4j</groupId>
+      <artifactId>langgraph4j-sqlite-saver</artifactId>
+      <version>${langgraph4j.version}</version>
+    </dependency>
+    <!-- The language model: Ollama chat with JSON Schema structured outputs (brings Jackson) -->
+    <dependency>
+      <groupId>dev.langchain4j</groupId>
+      <artifactId>langchain4j-ollama</artifactId>
+      <version>${langchain4j.version}</version>
+    </dependency>
+    <!-- Keeps the libraries' internal logging quiet; the agent system writes its own trace -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-nop</artifactId>
+      <version>2.0.17</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>ta3-agents</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.14.0</version>
+      </plugin>
+
+      <!-- The end-to-end test runs Maven on a small example class (it is skipped if mvn is not on the PATH) -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.5.5</version>
+      </plugin>
+
+      <!-- One runnable jar with all libraries: java -jar target/ta3-agents.jar ... -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>3.6.0</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <createDependencyReducedPom>false</createDependencyReducedPom>
+              <transformers>
+                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                  <mainClass>edu.uta.cse4392.ta3.Main</mainClass>
+                </transformer>
+                <!-- LangChain4j finds its HTTP client through META-INF/services -->
+                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+              </transformers>
+              <filters>
+                <filter>
+                  <artifact>*:*</artifact>
+                  <excludes>
+                    <exclude>META-INF/*.SF</exclude>
+                    <exclude>META-INF/*.DSA</exclude>
+                    <exclude>META-INF/*.RSA</exclude>
+                    <exclude>module-info.class</exclude>
+                    <exclude>META-INF/versions/*/module-info.class</exclude>
+                  </excludes>
+                </filter>
+              </filters>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
